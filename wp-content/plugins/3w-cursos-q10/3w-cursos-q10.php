@@ -138,8 +138,8 @@ function filtrarCurso($ciudad,$filtro) {
           </div>
           <!-- termina curso -->
   </div>
-
   <?php
+    var_dump($cursos);
 }
 
 function cursosq10_shortcode($atts) {
