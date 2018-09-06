@@ -6,7 +6,7 @@
 	?>				
 	</div>
 	<div class="edgtf-item-text-overlay">
-        <a class ="edgtf-portfolio-link" href="<?php echo esc_url(get_permalink()) ?>"></a>
+        <a class ="edgtf-portfolio-link" href="<?php echo $image_link; ?>" data-rel="prettyPhoto['pretty_photo_gallery']">
 		<div class="edgtf-item-text-overlay-inner">
 			<div class="edgtf-item-text-holder">
                 <?php echo $icon_html; ?>
@@ -22,5 +22,6 @@
 				?>
 			</div>
 		</div>
+		</a>
 	</div>
 </article>

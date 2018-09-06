@@ -446,6 +446,7 @@ class PortfolioList implements Lib\ShortcodeInterface {
 				$params['current_id'] = get_the_ID();
 				$params['thumb_size'] = $this->getImageSize($params);
 				$params['icon_html'] = $this->getPortfolioIconsHtml($params);
+				$params['image_link'] = $this->getImageLink($params);
 				$params['category_html'] = $this->getItemCategoriesHtml($params);
 				$params['separator_html'] = $this->getItemSeparatorHtml($params);
                 $params['excerpt_html'] = $this->getItemExcerptHtml($params);
@@ -521,6 +522,21 @@ class PortfolioList implements Lib\ShortcodeInterface {
 		return $query_array;
 	}
 	
+	/**
+    * Generates image link
+    *
+    * @param $params
+    *
+    * @return imageLink
+    */
+	public function getImageLink($params){
+	    $imageLink = '';
+	    $featured_image_array = wp_get_attachment_image_src(get_post_thumbnail_id($id), 'full'); //original size
+        $imageLink = $featured_image_array[0];
+
+        return $imageLink;
+	}
+
 	/**
     * Generates portfolio icons html
     *

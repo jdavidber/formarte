@@ -1,0 +1,444 @@
+#prematriculas-container{
+  background-image: url('../images/bg_prematriculas.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  margin-top: -54px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.46);
+  -moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.46);
+  box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.46);
+}
+.prematriculas-container{
+  background-color: #FFF!important;
+}
+#box-steps {
+    margin-top: 55px;
+    text-align: center;
+}
+#box-steps h1{
+  color: #FFFFFF;
+}
+  #box-steps p{
+    color: #bebebe;
+  }
+
+.hazloqueamas{
+  position: relative;
+  width: 167px;
+  height: 228px;
+  display: block;
+  float: left;
+  background-image: url('../images/icon_hazloqueamas.png');
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: 50%;
+  left: 200px;
+}
+
+.default-min {
+    max-width: 1160px;
+    margin: auto !important;
+}
+
+#tresw-loader{
+    position: absolute;
+    display: none;
+    width: 50px;
+    height: 50px;
+    color: #05E06D;
+    left: 50%;
+    margin-left: -25px;
+    top: 50%;
+    z-index: 550;
+}
+
+ul#list-steps {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-top: 50px;
+}
+
+#list-steps li {
+    position: relative;
+    width: 254px;
+    text-align: center;
+    float: left;
+    height: 260px;
+    padding-top: 10px;
+    transition: all 1s ease;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+    #list-steps li:first-child{
+        margin-left: 0;
+    }
+
+    #list-steps li:last-child{
+        margin-right: 0;
+    }
+
+#list-steps li a {
+    color: #bebebe;
+    display: block;
+    height: 100%;
+    cursor: not-allowed;
+}
+
+.step-number {
+    font-size: 35px;
+    font-weight: 300;
+}
+
+.step-description {
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.step-active {
+    background-color: #05E06D;
+    transition: all 1s ease;
+}
+
+.step-active a {
+    cursor: pointer !important;
+    color: #000000!important;
+}
+
+.step-img img{
+    width: 50%;
+    height: auto;
+    filter: opacity(50%);
+    -webkit-filter: opacity(50%);
+    transition: all 1s ease;
+}
+
+.step-active #figure1, .step-active #figure2, .step-active #figure3, .step-active #figure4{
+    background-position: top  center;
+}
+
+.step-active img{
+    filter: opacity(100%);
+    -webkit-filter: opacity(100%);
+    transition: all 1s ease;
+}
+
+.step-img-line {
+    position: absolute;
+    top: 44%;
+    left: 66%;
+    display: none;
+}
+
+.step-img-line img {
+    width: 140px;
+    max-width: 140px;
+    height: 23px;
+}
+
+#steps-bar {
+    padding: 25px 0px;
+    display: none;
+    margin-bottom: -50px;
+}
+
+#steps-progress-bar {
+    margin-top: 5px;
+}
+
+#progress-bar {
+    height: 25px;
+    width: 25%;
+    transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    -moz-transition: all .5s linear;
+    -o-transition: all .5s linear;
+    -ms-transition: all .5s linear;
+    background-color: #05E06D;
+}
+
+#text-progress-bar{
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #bebebe;
+}
+/* TABLA DE PROGRAMAS */
+.q10Modal{
+    position: fixed;
+    display: block;
+    width: 100%;
+    min-height: 200px;
+    background: #1c3744;
+    background-image: url('../images/bg-modal.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 0;
+    top: 50%;
+    margin-top: -200px;
+    transition: transform 0.5s ease;
+    overflow: hidden;
+    z-index: 5550;
+    opacity: 0.97;
+    padding-bottom:20px;
+}
+.q10Modal h2{
+    width: auto;
+    margin: 20px;
+    font-size: 20px;
+    color: #FFF;
+    text-align: center;
+}
+.q10Modal ul{
+    width: 700px;
+    list-style: none;
+    margin:0 auto;
+    margin-bottom: 20px;
+}
+    .q10Modal ul.twoCols{
+        width: 500px;
+    }
+    .q10Modal ul.oneCol{
+        width: 200px;
+        text-align: center;
+    }
+        .q10Modal ul.oneCol li{
+            width:100%;
+            margin:0;
+            margin-bottom: 10px;
+        }
+.q10Modal li{
+    width: 280px;
+    color: #FFF;
+    float: left;
+    margin: 5px 10px 5px 10px;
+    border-bottom: 1px dotted rgba(255,255,255,0.3);
+}
+    .q10Modal li.semestre{
+        width: 232px;
+        text-align: center;
+        margin: 8px;
+        margin-bottom: 20px;
+    }
+    .q10Modal li.semestre h3{
+        font-size: 24px;
+        color: #FFF;
+    }
+    .q10Modal li.semestre p{
+        font-size: 12px;
+    }
+
+.q10Modal li a{
+    display: block;
+    color: #FFF;
+    line-height: 18px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+    .q10Modal li.semestre a{
+        width: 60%;
+        color: #FFF;
+        margin: 0 auto;
+        font-size: 14px;
+        font-family: 'sciflysans', Source Sans Pro;
+    }
+    .q10Modal li a:hover, .q10Modal li a.active{
+        color: #05e06d;
+    }
+a.step1Regresar{
+  position: absolute;
+  display: none;
+  color: #CCC;
+  font-size: 13px;
+  left: 50%;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.5);;
+  bottom: 20px;
+}
+  a.step1Regresar:hover{
+    color: #05e06d;
+  }
+
+.showModal{
+    -webkit-transform: translate(0%, 0%);
+    -moz-transform: translate(0%, 0%);
+    -ms-transform: translate(0%, 0%);
+    -o-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+}
+.hideModal{
+    -webkit-transform: translate(0%, -500%);
+    -moz-transform: translate(0%, -500%);
+    -ms-transform: translate(0%, -500%);
+    -o-transform: translate(0%, -500%);
+    transform: translate(0%, -500%);
+}
+
+.btnHidePrograms a{
+    background: #1c3744;
+    padding: 25px;
+    padding-top:20px;
+    color: #05e06d;
+    font-size: 37px;
+    float: right;
+    top: 0px;
+}
+.btnHidePrograms a:hover{
+    background: #05e06d;
+    color: #1c3744;
+}
+.blurred{
+    filter: opacity(10%);
+    -webkit-filter: opacity(10%);
+}
+/*TABLA HORARIOS*/
+#q10tablaHorarios{
+    position: relative;
+    width:90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+#q10tablaHorarios h2{
+    color: #05e06d;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#q10tablaHorarios p{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#q10tablaHorarios table{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    background-color: #FFFFFF;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+#q10tablaHorarios table tbody tr, #q10tablaHorarios table thead tr{
+    border: none;
+    border-bottom: 1px solid #e1e1e1;
+    line-height: 18px;
+}
+
+#q10tablaHorarios thead tr th{
+    color: #1c3744;
+    font-family: 'sciflysans', Source Sans Pro;
+    font-weight: 500;
+}
+
+#q10tablaHorarios tbody tr:hover, #q10tablaHorarios tbody tr.active{
+    background: #05e06d;
+    color: #000;
+    cursor: pointer;
+}
+    #q10tablaHorarios tbody tr:hover td strong, #q10tablaHorarios tbody tr.active td strong{
+        color: #FFF!important;
+    }
+
+#q10tablaHorarios tbody tr td{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#thBarraTitulo{
+    position: relative;
+    height:40px;
+    background: rgba(26, 52, 66, 1);
+    padding: 15px 100px 15px 100px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+    #thBarraTitulo div{
+        width: 272px;
+        float: left;
+        text-align: center;
+    }
+
+        #thBarraTitulo div h5, #thBarraTitulo div span{
+            color: #FFF;
+        }
+
+        #thBarraTitulo div h5{
+            font-size: 16px;
+        }
+
+        #thBarraTitulo div span{
+            font-size: 18px;
+        }
+
+#q10tablaHorarios .comprar, #frmt-convenio-buscar{
+    position: relative;
+    width: 140px;
+    padding: 10px 20px 10px 20px;
+    color: #FFF;
+    background: #ff392c;
+    margin: 0 auto;
+    left: 50%;
+    margin-left: -90px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#frmt-convenio-buscar{
+  left: 0;
+  margin-left: 0;
+}
+input#frmt-convenio-codigo{
+  height: 38px;
+  min-width: 290px;
+  font-size: 18px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border: none;
+  padding-left: 10px;
+  text-align: center;
+}
+.frmt-tooltip{
+    opacity:0;
+    position: absolute;
+    width: 160px;
+    min-height: 30px;
+    background: #05e06d;
+    color: #FFF;
+    font-family: 'sciflysans', Source Sans Pro;
+    font-size: 16px;
+    padding:20px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    left: 0px;
+    top: 0px;
+    z-index: 1000;
+    transition: all 0.5s ease;
+}
+
+.frmt-tooltip:after {
+    left: 100%;
+    top: 50%;
+    border: solid 2px #000;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(136, 183, 213, 0);
+    border-left-color: #05e06d;
+    border-width: 10px;
+    margin-top: -10px;
+}
