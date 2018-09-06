@@ -1,0 +1,194 @@
+.nightly-admin {
+	margin-top: 4px;
+	margin-left: -2px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.nightly-admin button, .nightly-admin input[type=button], .nightly-admin input[type=submit], .nightly-admin a.button-primary, .nightly-admin a.button-secondary {
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	color: #fff;
+	border: none;
+	padding: 3px 14px;
+	height: 32px;
+	border: none;
+	background: #00a0d6;
+}
+
+.nightly-admin button:hover, .nightly-admin input[type=button]:hover, .nightly-admin input[type=submit]:hover {
+	background: #0690bf;
+	color: #fff;
+}
+
+.nightly-admin a.button-primary {
+	background: #00c64f;
+}
+
+.nightly-admin a.button-primary:hover {
+	background: #06b04c;
+}
+
+.nightly-admin a.button-secondary {
+	background: #aaa;
+}
+
+.nightly-admin a.button-secondary:hover {
+	background: #999;
+	color: #fff;
+}
+
+.nightly-admin #redux-form-wrapper {
+	background: #2f3b42;
+}
+
+.nightly-admin #redux-header {
+	background: #2a353b;
+	border: none;
+}
+
+.nightly-admin #redux-header h2 {
+	
+}
+
+.nightly-admin #redux-header span {
+	background: #05bb4b;
+	display: inline-block;
+	color: #fff !important;
+	padding: 0 4px;
+}
+
+.nightly-admin .redux-sidebar {
+	background: transparent;
+}
+
+.nightly-admin .redux-sidebar .redux-group-menu {
+	
+}
+
+.nightly-admin .redux-sidebar .redux-group-menu li {
+	background: #2f3b42;
+}
+
+.nightly-admin .redux-sidebar .redux-group-menu li a {
+	background: transparent;
+	border: none;
+	color: #eee;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
+	display: block;
+	background: #2f3b42;
+}
+
+.nightly-admin .redux-sidebar .redux-group-menu li a:hover {
+	background: #2a353b;
+	border: none;
+}
+
+.nightly-admin .redux-sidebar .redux-group-menu li.active a {
+	background: #05bb4b;
+	color: #fff;
+}
+
+.nightly-admin .redux-main {
+	
+}
+
+.nightly-admin #redux-sticky {
+	position: relative;
+	background: none;
+}
+
+.nightly-admin #info_bar {
+	border: none !important;
+	position: absolute;
+	top: -45px;
+	right: 12px;
+	background: none;
+	padding: 0;
+	width: 0;
+}
+
+.nightly-admin #info_bar .expand_options {
+	display: none;
+}
+
+.nightly-admin #info_bar .redux-action_bar {
+	position: relative;
+	width: 160px;
+}
+
+.nightly-admin #info_bar .redux-action_bar .spinner {
+	background-image: url('../images/loader.gif');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 75%;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.nightly-admin #info_bar .redux-action_bar #redux_save {
+	background: #05bb4b;
+	text-shadow: none !important;
+}
+
+.nightly-admin #info_bar .redux-action_bar #redux-defaults {
+	display: none;
+}
+
+.nightly-admin #info_bar .redux-action_bar #redux-defaults-section {
+	display: none;
+}
+
+.nightly-admin #redux-footer-sticky {
+ 	position: relative;
+ 	background: #eee;
+}
+
+.nightly-admin #redux-footer {
+
+}
+
+.nightly-admin #redux-footer #redux-share a {
+	margin-right: 2px;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	position: relative;
+	top: 2px;
+}
+
+.nightly-admin #redux-footer .redux-action_bar {
+	position: relative;
+	width: 158px;
+}
+
+.nightly-admin #redux-footer .redux-action_bar #redux_save {
+	text-shadow: none !important;
+}
+
+.nightly-admin #redux-footer .redux-action_bar .spinner {
+	background-image: url('../images/loader.gif');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 75%;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.nightly-admin #redux-footer .redux-action_bar #redux-defaults {
+	display: none;
+}
+
+.nightly-admin #redux-footer .redux-action_bar #redux-defaults-section {
+	display: none;
+}

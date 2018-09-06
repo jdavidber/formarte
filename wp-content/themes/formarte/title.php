@@ -1,0 +1,1 @@
+<?php oxides_edge_get_title();

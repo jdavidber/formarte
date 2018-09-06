@@ -1,0 +1,149 @@
+.frm-curso{
+  position: relative;
+  width: 31.333333%;
+  min-height: 655px;
+  background: #FFF;
+  -webkit-box-shadow: 3px 4px 4px 0px rgba(0,0,0,0.05);
+  -moz-box-shadow: 3px 4px 4px 0px rgba(0,0,0,0.05);
+  box-shadow: 3px 4px 4px 0px rgba(0,0,0,0.05);
+  border: 1px solid #F9F9F9;
+  margin: 7px;
+  margin-bottom: 20px;
+  padding: 0;
+}
+  .frm-curso-img{
+    position: relative;
+  }
+  .frm-curso-img img{
+    min-height: 190px;
+  }
+  .frm-curso-img .descuento{
+    position: absolute;
+    width: 94px;
+    height: 94px;
+    background-color: #09D56B;
+    color: #FFF;
+    text-align: center;
+    line-height: 74px;
+    right: 0;
+    top: 0;
+    font-family: 'sciflysans', Source Sans Pro;
+    font-size: 34px;
+  }
+    .frm-curso-img .descuento span{
+      display: block;
+      font-size: 10px;
+      position: relative;
+      text-align: center;
+      clear: both;
+      top: -15px;
+      line-height: 12px;
+    }
+  .frm-curso h1{
+    min-height: 96px;
+  }
+  .frm-curso h1, .frm-curso-info h4{
+    font-size: 20px;
+    font-weight: normal;
+    color: #09D56B;
+    text-align: center;
+    margin: 20px;
+  }
+  .frm-curso-info{
+    margin: 20px;
+  }
+    .frm-curso-info h4{
+      text-align: left;
+      font-size: 20px;
+      margin: 0;
+    }
+    .frm-curso-info p{
+      line-height: 14px;
+      font-size: 14px;
+      margin: 0;
+      margin-top: 10px;
+    }
+      .frm-curso-info p strong{
+        color: #656464;
+      }
+    .frm-curso-info .valorcuotas{
+      color: #09D56B;
+      margin-top: 0;
+      font-size: 16px;
+    }
+  .frm-curso a.ver-curso, .frm-curso a.pre-inscribirse{
+    position: absolute;;
+    bottom: 0;
+    width: 130px;
+    height: 36px;
+    line-height: 36px;
+    display: inline-block;
+    border: none;
+    background-color: #332B4F;
+    border-bottom: 2px solid #09D56B;
+    color: #FFF;
+    margin: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bolder;
+  }
+  .frm-curso a.pre-inscribirse{
+    background-color: #00CAC4;
+    border-bottom: 2px solid #263654;
+    right: 0px;
+  }
+  .filtrosCursos{
+    background: #F7F8FC;
+    padding: 15px;
+  }
+    .filtrosCursos h1{
+      font-size: 20px;
+      font-weight: normal;
+      color: #09D56B;
+    }
+    .filtrosCursos ul{
+      position: relative;
+      padding: 15px;
+      margin-bottom: 20px;
+      background-color: #FFF;
+      -webkit-box-shadow: 3px 4px 4px 0px rgba(0,0,0,0.05);
+      -moz-box-shadow: 3px 4px 4px 0px rgba(0,0,0,0.05);
+      box-shadow: 3px 4px 4px 0px rgba(0,0,0,0.05);
+      border: 1px solid #F9F9F9;
+      list-style: none;
+    }
+      .filtrosCursos ul li a{
+        padding-left: 26px;
+        display: block;
+        max-height: 29px;
+        line-height: 16px;
+        margin-bottom: 10px!important;
+        background-image: url('../img/checkbox_v2.png');
+        background-position: left top;
+        background-repeat: no-repeat;
+        color: #142531;
+        cursor: pointer;
+      }
+        .filtrosCursos ul li a.checked{
+          background-position: left bottom;
+        }
+        .filtrosCursos ul li a:hover{
+          color: #000;
+        }
+    .filtrosCursos a.ver-todos{
+      text-align: center;
+    }
+    #listaCursos p.notification{
+      font-size: 30px;
+      color: #000;
+      line-height: 40px;;
+    }
+/*RESPONSIVE*/
+@media only screen and (max-width: 720px) {
+  .frm-curso{
+    width: 90%;
+    min-height: 740px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+}

@@ -1,0 +1,1 @@
+<div class="edgtf-post-info-comments-holder"><a class="edgtf-post-info-comments" href="<?php comments_link(); ?>" target="_self"><?php comments_number('0 ' . esc_html__('Comments','oxides'), '1 '.esc_html__('Comment','oxides'), '% '.esc_html__('Comments','oxides') ); ?></a></div>

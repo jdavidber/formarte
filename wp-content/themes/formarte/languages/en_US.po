@@ -1,0 +1,935 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Oxides v1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2015-11-11 10:59:07+0000\n"
+"Last-Translator: admin <support@edge-support.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: 404.php:21
+#@ oxides
+msgid "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable."
+msgstr ""
+
+#: comments.php:4
+#@ oxides
+msgid "NO COMMENTS"
+msgstr ""
+
+#: comments.php:4
+#@ oxides
+msgid " COMMENT "
+msgstr ""
+
+#: comments.php:4
+#@ oxides
+msgid " COMMENTS "
+msgstr ""
+
+#: comments.php:9
+#@ oxides
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: comments.php:32
+#@ oxides
+msgid "Sorry, the comment form is closed at this time."
+msgstr ""
+
+#: comments.php:45
+#@ oxides
+msgid "POST A COMMENT"
+msgstr ""
+
+#: comments.php:46
+#, php-format
+#@ oxides
+msgid "REPLY TO %s"
+msgstr ""
+
+#: comments.php:47
+#@ oxides
+msgid "CANCEL REPLY"
+msgstr ""
+
+#: comments.php:48
+#@ oxides
+msgid "POST COMMENT"
+msgstr ""
+
+#: comments.php:49
+#@ oxides
+msgid "Write your comment here..."
+msgstr ""
+
+#: comments.php:53
+#@ oxides
+msgid "Name"
+msgstr ""
+
+#: comments.php:54
+#@ oxides
+msgid "E-mail"
+msgstr ""
+
+#: framework/admin/skins/edge/templates/content-import.php:98
+#@ oxides
+msgid "The import process may take some time. Please be patient."
+msgstr ""
+
+#: framework/admin/skins/edge/templates/content-import.php:117
+#@ oxides
+msgid "Important notes:"
+msgstr ""
+
+#: framework/admin/skins/edge/templates/content-import.php:119
+#@ oxides
+msgid "Please note that import process will take time needed to download all attachments from demo web site."
+msgstr ""
+
+#: framework/admin/skins/edge/templates/content-import.php:120
+#@ oxides
+msgid "If you plan to use shop, please install WooCommerce before you run import."
+msgstr ""
+
+#: framework/admin/skins/edge/templates/header.php:16
+#@ oxides
+msgid "Save Changes"
+msgstr ""
+
+#: framework/edgt-framework.php:542
+#@ oxides
+msgid "Dismiss this notice"
+msgstr ""
+
+#: framework/modules/blog/blog-functions.php:142
+#@ oxides
+msgid "NEWER POSTS"
+msgstr ""
+
+#: framework/modules/blog/blog-functions.php:153
+#@ oxides
+msgid "OLDER POSTS"
+msgstr ""
+
+#: framework/modules/blog/blog-functions.php:385
+#@ oxides
+msgid "Pingback:"
+msgstr ""
+
+#: framework/modules/blog/blog-functions.php:396
+#@ oxides
+msgid "Leave reply"
+msgstr ""
+
+#: framework/modules/blog/blog-functions.php:397
+#@ oxides
+msgid "Edit comment"
+msgstr ""
+
+#: framework/modules/blog/blog-functions.php:573
+#@ oxides
+msgid "Continue reading"
+msgstr ""
+
+#: framework/modules/blog/blog-functions.php:695
+#: framework/modules/blog/templates/lists/post-formats/standard-checkered.php:35
+#: framework/modules/shortcodes/blog-list/templates/boxes.php:34
+#: framework/modules/shortcodes/blog-list/templates/checkered.php:37
+#@ oxides
+msgid "READ MORE"
+msgstr ""
+
+#: framework/modules/blog/templates/parts/audio.php:4
+#@ oxides
+msgid "Your browser don't support audio player"
+msgstr ""
+
+#: framework/modules/blog/templates/parts/no-posts.php:2
+#: framework/modules/shortcodes/blog-list/templates/blog-list-holder.php:13
+#: search.php:54
+#@ oxides
+msgid "No posts were found."
+msgstr ""
+
+#: framework/modules/blog/templates/parts/post-info-author.php:1
+#@ oxides
+msgid "by"
+msgstr ""
+
+#: framework/modules/blog/templates/parts/post-info-category.php:1
+#@ oxides
+msgid "in "
+msgstr ""
+
+#: framework/modules/blog/templates/parts/post-info-comments.php:1
+#@ oxides
+msgid "Comments"
+msgstr ""
+
+#: framework/modules/blog/templates/parts/post-info-comments.php:1
+#@ oxides
+msgid "Comment"
+msgstr ""
+
+#: framework/modules/blog/templates/parts/post-info-share.php:3
+#@ oxides
+msgid "Keep connected"
+msgstr ""
+
+#: framework/modules/blog/templates/single/parts/related-posts.php:4
+#@ oxides
+msgid "YOU MIGHT ALSO LIKE"
+msgstr ""
+
+#: framework/modules/blog/templates/single/parts/tags.php:3
+#@ oxides
+msgid "POST TAGS:"
+msgstr ""
+
+#: framework/modules/fullscreenmenu/fullscreen-menu-functions.php:7
+#@ oxides
+msgid "Fullscreen Navigation"
+msgstr ""
+
+#: framework/modules/header/functions.php:10
+#@ oxides
+msgid "Main Navigation"
+msgstr ""
+
+#: framework/modules/header/widget-areas-functions.php:13
+#@ oxides
+msgid "Top Bar Left"
+msgstr ""
+
+#: framework/modules/header/widget-areas-functions.php:22
+#@ oxides
+msgid "Top Bar Center"
+msgstr ""
+
+#: framework/modules/header/widget-areas-functions.php:30
+#@ oxides
+msgid "Top Bar Right"
+msgstr ""
+
+#: framework/modules/header/widget-areas-functions.php:47
+#@ oxides
+msgid "Right From Main Menu"
+msgstr ""
+
+#: framework/modules/header/widget-areas-functions.php:51
+#@ oxides
+msgid "Widgets added here will appear on the right hand side from the main menu"
+msgstr ""
+
+#: framework/modules/header/widget-areas-functions.php:65
+#@ oxides
+msgid "Right From Mobile Logo"
+msgstr ""
+
+#: framework/modules/header/widget-areas-functions.php:69
+#@ oxides
+msgid "Widgets added here will appear on the right hand side from the mobile logo"
+msgstr ""
+
+#: framework/modules/header/widget-areas-functions.php:84
+#@ oxides
+msgid "Sticky Right"
+msgstr ""
+
+#: framework/modules/header/widget-areas-functions.php:88
+#@ oxides
+msgid "Widgets added here will appear on the right hand side in sticky menu"
+msgstr ""
+
+#: framework/modules/like/like.php:90
+#: framework/modules/like/like.php:111
+#@ oxides
+msgid "Like"
+msgstr ""
+
+#: framework/modules/like/like.php:92
+#: framework/modules/like/like.php:113
+#@ oxides
+msgid "Likes"
+msgstr ""
+
+#: framework/modules/like/like.php:131
+#@ oxides
+msgid "Like this"
+msgstr ""
+
+#: framework/modules/like/like.php:134
+#@ oxides
+msgid "You already like this!"
+msgstr ""
+
+#: framework/modules/portfolio/templates/single/parts/categories.php:16
+#@ oxides
+msgid "Category"
+msgstr ""
+
+#: framework/modules/portfolio/templates/single/parts/date.php:4
+#@ oxides
+msgid "Date"
+msgstr ""
+
+#: framework/modules/portfolio/templates/single/parts/tags.php:12
+#@ oxides
+msgid "Tags"
+msgstr ""
+
+#: framework/modules/search/templates/types/fullscreen-search.php:14
+#@ oxides
+msgid "SEARCH:"
+msgstr ""
+
+#: framework/modules/search/templates/types/search-covers-header.php:9
+#: framework/modules/search/templates/types/search-slides-from-header-bottom.php:8
+#: framework/modules/search/templates/types/search-slides-from-window-top.php:9
+#: framework/modules/widgets/search-opener/search-opener.php:117
+#@ oxides
+msgid "SEARCH"
+msgstr ""
+
+#: framework/modules/shortcodes/accordions/accordion-tab.php:25
+#@ oxides
+msgid "Edge Accordion Tab"
+msgstr ""
+
+#: framework/modules/shortcodes/accordions/accordion-tab.php:47
+#, php-format
+#@ oxides
+msgid "Enter optional row ID. Make sure it is unique, and it is valid as w3c specification: %s (Must not have spaces)"
+msgstr ""
+
+#: framework/modules/shortcodes/accordions/accordion-tab.php:47
+#@ oxides
+msgid "link"
+msgstr ""
+
+#: framework/modules/shortcodes/accordions/accordion.php:26
+#@ oxides
+msgid "Edge Accordion"
+msgstr ""
+
+#: framework/modules/shortcodes/blockquote/blockquote.php:37
+#@ oxides
+msgid "Edge Blockquote"
+msgstr ""
+
+#: framework/modules/shortcodes/blog-list/blog-list.php:27
+#@ oxides
+msgid "Edge Blog List"
+msgstr ""
+
+#: framework/modules/shortcodes/button/button.php:39
+#@ oxides
+msgid "Edge Button"
+msgstr ""
+
+#: framework/modules/shortcodes/calltoaction/call-to-action.php:52
+#@ oxides
+msgid "Edge Call to Action"
+msgstr ""
+
+#: framework/modules/shortcodes/carousel-with-image-and-text/carousel-with-image-and-text.php:33
+#@ oxides
+msgid "Edge Carousel With Image And Text"
+msgstr ""
+
+#: framework/modules/shortcodes/circle-carousel/circle-carousel.php:34
+#@ oxides
+msgid "Edge Circle Carousel"
+msgstr ""
+
+#: framework/modules/shortcodes/countdown/countdown.php:38
+#@ oxides
+msgid "Edge Countdown"
+msgstr ""
+
+#: framework/modules/shortcodes/counter/counter.php:37
+#@ oxides
+msgid "Edge Counter"
+msgstr ""
+
+#: framework/modules/shortcodes/customfont/custom-font.php:37
+#@ oxides
+msgid "Edge Custom Font"
+msgstr ""
+
+#: framework/modules/shortcodes/elements-holder/elements-holder-item.php:21
+#@ oxides
+msgid "Elements Holder Item"
+msgstr ""
+
+#: framework/modules/shortcodes/elements-holder/elements-holder.php:18
+#@ oxides
+msgid "Elements Holder"
+msgstr ""
+
+#: framework/modules/shortcodes/flying-deck/flying-deck.php:35
+#@ oxides
+msgid "Edge Flying Deck"
+msgstr ""
+
+#: framework/modules/shortcodes/google-map/google-map.php:21
+#@ oxides
+msgid "Edge Google Map"
+msgstr ""
+
+#: framework/modules/shortcodes/icon/icon.php:36
+#@ oxides
+msgid "Edge Icon"
+msgstr ""
+
+#: framework/modules/shortcodes/icon-list-item/icon-list-item.php:34
+#@ oxides
+msgid "Edge Icon List Item"
+msgstr ""
+
+#: framework/modules/shortcodes/icon-with-separator/icon-with-separator.php:37
+#@ oxides
+msgid "Edge Icon With Separator"
+msgstr ""
+
+#: framework/modules/shortcodes/icon-with-text/icon-with-text.php:37
+#@ oxides
+msgid "Edge Icon With Text"
+msgstr ""
+
+#: framework/modules/shortcodes/imagegallery/image-gallery.php:35
+#@ oxides
+msgid "Edge Image Gallery"
+msgstr ""
+
+#: framework/modules/shortcodes/info-card/info-card.php:62
+#@ oxides
+msgid "Edge Info Card"
+msgstr ""
+
+#: framework/modules/shortcodes/message/message.php:28
+#@ oxides
+msgid "Edge Message"
+msgstr ""
+
+#: framework/modules/shortcodes/ordered-list/ordered-list.php:18
+#@ oxides
+msgid "Edge List - Ordered"
+msgstr ""
+
+#: framework/modules/shortcodes/piecharts/piechartbasic/pie-chart-basic.php:37
+#@ oxides
+msgid "Edge Pie Chart"
+msgstr ""
+
+#: framework/modules/shortcodes/pricing-table/pricing-table.php:18
+#@ oxides
+msgid "Edge Pricing Table"
+msgstr ""
+
+#: framework/modules/shortcodes/pricing-table/pricing-tables.php:19
+#@ oxides
+msgid "Edge Pricing Tables"
+msgstr ""
+
+#: framework/modules/shortcodes/progress-bar/progress-bar.php:20
+#@ oxides
+msgid "Edge Progress Bar"
+msgstr ""
+
+#: framework/modules/shortcodes/scrolling-image/scrolling-image.php:35
+#@ oxides
+msgid "Edge Scrolling Image"
+msgstr ""
+
+#: framework/modules/shortcodes/separator/separator.php:23
+#@ oxides
+msgid "Edge Separator"
+msgstr ""
+
+#: framework/modules/shortcodes/single-product/single-product.php:37
+#@ oxides
+msgid "Edge Single Product"
+msgstr ""
+
+#: framework/modules/shortcodes/single-product/templates/single-product.php:6
+#: framework/modules/woocommerce/woocommerce-template-hooks.php:80
+#@ oxides
+msgid "%"
+msgstr ""
+
+#: framework/modules/shortcodes/socialshare/social-share.php:43
+#@ oxides
+msgid "Edge Social Share"
+msgstr ""
+
+#: framework/modules/shortcodes/socialshare/templates/dropdown.php:4
+#@ oxides
+msgid "Share"
+msgstr ""
+
+#: framework/modules/shortcodes/tabs/tab.php:28
+#@ oxides
+msgid "Edge Tab"
+msgstr ""
+
+#: framework/modules/shortcodes/tabs/tabs.php:30
+#@ oxides
+msgid "Edge Tabs"
+msgstr ""
+
+#: framework/modules/shortcodes/team/team.php:73
+#@ oxides
+msgid "Edge Team"
+msgstr ""
+
+#: framework/modules/shortcodes/unordered-list/unordered-list.php:30
+#@ oxides
+msgid "Edge List - Unordered"
+msgstr ""
+
+#: framework/modules/shortcodes/videobutton/video-button.php:37
+#@ oxides
+msgid "Edge Video Button"
+msgstr ""
+
+#: framework/modules/title/title-functions.php:86
+#@ oxides
+msgid "Tag"
+msgstr ""
+
+#: framework/modules/title/title-functions.php:98
+#@ oxides
+msgid "Author:"
+msgstr ""
+
+#: framework/modules/title/title-functions.php:116
+#@ oxides
+msgid "Search Results for"
+msgstr ""
+
+#: framework/modules/title/title-functions.php:127
+#@ oxides
+msgid "Oops, This Page Could Not Be Found!"
+msgstr ""
+
+#: framework/modules/title/title-functions.php:156
+#@ oxides
+msgid "Archive"
+msgstr ""
+
+#: framework/modules/widgets/instagram/instagram.php:10
+#@ oxides
+msgid "Display instagram images"
+msgstr ""
+
+#: framework/modules/widgets/latest-post/latest-posts.php:10
+#@ oxides
+msgid "Display posts from your blog"
+msgstr ""
+
+#: framework/modules/widgets/lib/widget-class.php:75
+#@ oxides
+msgid "There are no options for this widget."
+msgstr ""
+
+#: framework/modules/widgets/sticky-sidebar/sticky-sidebar.php:8
+#@ oxides
+msgid "Use this widget to make the sidebar sticky. Drag it into the sidebar above the widget which you want to be the first element in the sticky sidebar."
+msgstr ""
+
+#: framework/modules/woocommerce/widgets/woocommerce-dropdown-cart.php:7
+#@ oxides
+msgid "Edge Woocommerce Dropdown Cart"
+msgstr ""
+
+#: framework/modules/woocommerce/widgets/woocommerce-dropdown-cart.php:23
+#: framework/modules/woocommerce/widgets/woocommerce-dropdown-cart.php:118
+#, php-format
+#@ oxides
+msgid "%d"
+msgid_plural "%d"
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/modules/woocommerce/widgets/woocommerce-dropdown-cart.php:65
+#: framework/modules/woocommerce/widgets/woocommerce-dropdown-cart.php:158
+#@ oxides
+msgid "Quantity: "
+msgstr ""
+
+#: framework/modules/woocommerce/widgets/woocommerce-dropdown-cart.php:69
+#: framework/modules/woocommerce/widgets/woocommerce-dropdown-cart.php:162
+#: woocommerce/cart/cart.php:109
+#@ oxides
+msgid "Remove this item"
+msgstr ""
+
+#: framework/modules/woocommerce/widgets/woocommerce-dropdown-cart.php:77
+#: framework/modules/woocommerce/widgets/woocommerce-dropdown-cart.php:170
+#: woocommerce/cart/cart.php:29
+#@ oxides
+msgid "Total"
+msgstr ""
+
+#: framework/modules/woocommerce/widgets/woocommerce-dropdown-cart.php:88
+#: framework/modules/woocommerce/widgets/woocommerce-dropdown-cart.php:182
+#@ oxides
+msgid "SHOPPING BAG"
+msgstr ""
+
+#: framework/modules/woocommerce/widgets/woocommerce-dropdown-cart.php:89
+#: framework/modules/woocommerce/widgets/woocommerce-dropdown-cart.php:185
+#@ oxides
+msgid "CHECKOUT"
+msgstr ""
+
+#: framework/modules/woocommerce/widgets/woocommerce-dropdown-cart.php:94
+#: framework/modules/woocommerce/widgets/woocommerce-dropdown-cart.php:192
+#@ oxides
+msgid "No products in the cart."
+msgstr ""
+
+#: framework/modules/woocommerce/woocommerce-functions.php:272
+#@ oxides
+msgid "SHARE:"
+msgstr ""
+
+#: functions.php:782
+#@ oxides
+msgid "No more posts"
+msgstr ""
+
+#: functions.php:783
+#@ oxides
+msgid "Loading new posts..."
+msgstr ""
+
+#. translators: %s: title of menu item which is invalid
+#: includes/nav-menu/edit_custom_walker.php:78
+#, php-format
+#@ oxides
+msgid "%s (Invalid)"
+msgstr ""
+
+#. translators: %s: title of menu item in draft status
+#: includes/nav-menu/edit_custom_walker.php:82
+#, php-format
+#@ oxides
+msgid "%s (Pending)"
+msgstr ""
+
+#: includes/nav-menu/edit_custom_walker.php:107
+#@ oxides
+msgid "Move up"
+msgstr ""
+
+#: includes/nav-menu/edit_custom_walker.php:120
+#@ oxides
+msgid "Move down"
+msgstr ""
+
+#: includes/nav-menu/edit_custom_walker.php:122
+#: includes/nav-menu/edit_custom_walker.php:124
+#@ oxides
+msgid "Edit Menu Item"
+msgstr ""
+
+#: includes/nav-menu/edit_custom_walker.php:133
+#@ oxides
+msgid "URL"
+msgstr ""
+
+#: includes/nav-menu/edit_custom_walker.php:140
+#@ oxides
+msgid "Navigation Label"
+msgstr ""
+
+#: includes/nav-menu/edit_custom_walker.php:146
+#@ oxides
+msgid "Title Attribute"
+msgstr ""
+
+#: includes/nav-menu/edit_custom_walker.php:153
+#@ oxides
+msgid "Open link in a new window/tab"
+msgstr ""
+
+#: includes/nav-menu/edit_custom_walker.php:158
+#@ oxides
+msgid "CSS Classes (optional)"
+msgstr ""
+
+#: includes/nav-menu/edit_custom_walker.php:164
+#@ oxides
+msgid "Link Relationship (XFN)"
+msgstr ""
+
+#: includes/nav-menu/edit_custom_walker.php:170
+#@ oxides
+msgid "Description"
+msgstr ""
+
+#: includes/nav-menu/edit_custom_walker.php:172
+#@ oxides
+msgid "The description will be displayed in the menu if the current theme supports it."
+msgstr ""
+
+#: includes/nav-menu/edit_custom_walker.php:180
+#@ oxides
+msgid "Anchor"
+msgstr ""
+
+#: includes/nav-menu/edit_custom_walker.php:191
+#@ oxides
+msgid "Don't link"
+msgstr ""
+
+#: includes/nav-menu/edit_custom_walker.php:201
+#@ oxides
+msgid "Don't show"
+msgstr ""
+
+#: includes/nav-menu/edit_custom_walker.php:206
+#@ oxides
+msgid "Type"
+msgstr ""
+
+#: includes/nav-menu/edit_custom_walker.php:216
+#@ oxides
+msgid "Wide menu position"
+msgstr ""
+
+#: includes/nav-menu/edit_custom_walker.php:234
+#@ oxides
+msgid "Icon Pack"
+msgstr ""
+
+#: includes/nav-menu/edit_custom_walker.php:240
+#@ oxides
+msgid "Only with \"default\" & \"wide with icons\" menu types"
+msgstr ""
+
+#: includes/nav-menu/edit_custom_walker.php:251
+#@ oxides
+msgid "Icon"
+msgstr ""
+
+#: includes/nav-menu/edit_custom_walker.php:272
+#@ oxides
+msgid "Custom widget area"
+msgstr ""
+
+#: includes/nav-menu/edit_custom_walker.php:283
+#@ oxides
+msgid "Only with \"wide & wide with icons\" menu type"
+msgstr ""
+
+#: includes/nav-menu/edit_custom_walker.php:292
+#, php-format
+#@ oxides
+msgid "Original: %s"
+msgstr ""
+
+#: includes/nav-menu/edit_custom_walker.php:305
+#: woocommerce/cart/cart.php:30
+#@ oxides
+msgid "Remove"
+msgstr ""
+
+#: includes/nav-menu/edit_custom_walker.php:306
+#@ oxides
+msgid "Cancel"
+msgstr ""
+
+#: includes/plugins/plugins-activation.php:71
+#@ oxides
+msgid "Install Required Plugins"
+msgstr ""
+
+#: includes/plugins/plugins-activation.php:72
+#@ oxides
+msgid "Install Plugins"
+msgstr ""
+
+#: includes/plugins/plugins-activation.php:73
+#, php-format
+#@ oxides
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: includes/plugins/plugins-activation.php:74
+#@ oxides
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: includes/plugins/plugins-activation.php:75
+#, php-format
+#@ oxides
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/plugins/plugins-activation.php:76
+#, php-format
+#@ oxides
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/plugins/plugins-activation.php:77
+#, php-format
+#@ oxides
+msgid "Sorry, but you do not have the correct permissions to install the %s plugin. Contact the administrator of this site for help on getting the plugin installed."
+msgid_plural "Sorry, but you do not have the correct permissions to install the %s plugins. Contact the administrator of this site for help on getting the plugins installed."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/plugins/plugins-activation.php:78
+#, php-format
+#@ oxides
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/plugins/plugins-activation.php:79
+#, php-format
+#@ oxides
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/plugins/plugins-activation.php:80
+#, php-format
+#@ oxides
+msgid "Sorry, but you do not have the correct permissions to activate the %s plugin. Contact the administrator of this site for help on getting the plugin activated."
+msgid_plural "Sorry, but you do not have the correct permissions to activate the %s plugins. Contact the administrator of this site for help on getting the plugins activated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/plugins/plugins-activation.php:81
+#, php-format
+#@ oxides
+msgid "The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s."
+msgid_plural "The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/plugins/plugins-activation.php:82
+#, php-format
+#@ oxides
+msgid "Sorry, but you do not have the correct permissions to update the %s plugin. Contact the administrator of this site for help on getting the plugin updated."
+msgid_plural "Sorry, but you do not have the correct permissions to update the %s plugins. Contact the administrator of this site for help on getting the plugins updated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/plugins/plugins-activation.php:83
+#@ oxides
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/plugins/plugins-activation.php:84
+#@ oxides
+msgid "Activate installed plugin"
+msgid_plural "Activate installed plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/plugins/plugins-activation.php:85
+#@ oxides
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: includes/plugins/plugins-activation.php:86
+#@ oxides
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: includes/plugins/plugins-activation.php:87
+#, php-format
+#@ oxides
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: includes/sidebar/edgt-custom-sidebar.php:18
+#@ oxides
+msgid "Custom Widget Area"
+msgstr ""
+
+#: includes/sidebar/edgt-custom-sidebar.php:42
+#@ oxides
+msgid "Enter Name of the new Widget Area"
+msgstr ""
+
+#: includes/sidebar/edgt-custom-sidebar.php:43
+#@ oxides
+msgid "Add Widget Area"
+msgstr ""
+
+#: woocommerce/cart/cart.php:25
+#@ oxides
+msgid "Product"
+msgstr ""
+
+#: woocommerce/cart/cart.php:27
+#@ oxides
+msgid "Price"
+msgstr ""
+
+#: woocommerce/cart/cart.php:28
+#@ oxides
+msgid "Quantity"
+msgstr ""
+
+#: woocommerce/cart/cart.php:70
+#@ oxides
+msgid "Available on backorder"
+msgstr ""
+
+#: woocommerce/cart/cart.php:128
+#@ oxides
+msgid "Coupon"
+msgstr ""
+
+#: woocommerce/cart/cart.php:128
+#@ oxides
+msgid "Coupon code"
+msgstr ""
+
+#: woocommerce/cart/cart.php:128
+#@ oxides
+msgid "Apply Coupon"
+msgstr ""
+
+#: woocommerce/cart/cart.php:134
+#@ oxides
+msgid "Update Cart"
+msgstr ""
+
+#: woocommerce/global/quantity-input.php:18
+#@ oxides
+msgctxt "Product quantity input tooltip"
+msgid "Qty"
+msgstr ""
+
