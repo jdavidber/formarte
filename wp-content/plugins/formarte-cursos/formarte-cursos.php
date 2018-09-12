@@ -19,7 +19,6 @@ function cursos_nuevo_js() {
 
 //Index
 function Index(){
-    echo "Cursos: ";
     require_once plugins_url('php/form.php', __FILE__);
 }
 

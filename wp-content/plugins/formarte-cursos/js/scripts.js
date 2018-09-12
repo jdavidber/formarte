@@ -30,7 +30,7 @@ $( document ).ready(function() {
   var result = {};
   query.split("&").forEach(function(part) {
     if(!part) return;
-    part = part.split("+").join(" "); // replace every + with space, regexp-free version
+    part = part.split("+").join(" ");
     var eq = part.indexOf("=");
     var key = eq>-1 ? part.substr(0,eq) : part;
     var val = eq>-1 ? decodeURIComponent(part.substr(eq+1)) : "";

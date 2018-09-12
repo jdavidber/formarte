@@ -8,26 +8,31 @@ and open the template in the editor.
     Author     : DISENADORWEB
 */
 
-.filtro-cursos input{
-    width: 98%;
-    display: block;
-    padding: 5px;
-    margin: 10px 5px;
-}
 .filtro-cursos select{
     width: 100%;
     display: block;
     padding: 5px;
-    margin: 10px 5px;
+    margin: 5px 5px 10px;
+    border-radius: 15px;
 }
 .filtro-cursos button{
     display: block;
     float: right;
     width: 60%;
-    padding: 5px;
+    height: 30px;
     text-align: center;
     cursor: pointer;
+    border-radius: 15px;
+    border: none;
+    margin-top: 20px;
+    background: #05e06d;
+    color: #FFF;
+    font-size: 16px;
 }
 .filtro-cursos button:active{
     transform: scale(0.9);
+}
+
+.filtro-cursos label{
+    margin-top: 10px;
 }
