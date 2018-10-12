@@ -4,18 +4,196 @@
  * and open the template in the editor.
  */
 $( document ).ready(function() {
-    
     var meto = document.getElementById("metodologia");
     var ciudad = document.getElementById("ciudad");
+    var ciudadDiv = document.getElementById("ciudadDiv");
+    var jornadaDiv = document.getElementById("jornadaDiv");
+    var semestre = document.getElementById("semestre");
+    var programa = document.getElementById("programa");
+    var jornada = document.getElementById("jornada");
     $( ".metodologia" ).change(function() {
         if(meto.value === "VIRTUAL"){
-        ciudad.style.display = "none";
+        ciudadDiv.style.display = "none";
+        jornadaDiv.style.display = "none";
         ciudad.removeAttribute("required", "");
         ciudad.value = "none";
+                $('#programa')
+            .find('option')
+            .remove()
+            .end()
+            .append('<option value="VPSB">PREICFES SABER 11º</option>')
+            .val('none')
+            .append('<option value="VPUA">PREUNIVERSITARIO UDEA</option>')
+            .val('none')
+            .append('<option value="VPUN">PREUNIVERSITARIO UNAL</option>')
+            .val('none')
+            .append('<option value="VPCA">PREUNIVERSITARIO CAUCA</option>')
+            .val('none')
+            .append('<option value="VPUC">PREUNIVERSITARIO CARTAGENA</option>')
+            .val('none')
+            .append('<option value="VPUT">PREUNIVERSITARIO ATLÁNTICO</option>')
+            .val('none')
+            .append('<option value="VPMG">PREUNIVERSITARIO MAGDALENA</option>')
+            .val('none')
+            .append('<option value="none">--Seleccione--</option>')
+            .val('none');
+        
         }else{
-            ciudad.style.display = "block";
+            ciudadDiv.style.display = "block";
+            jornadaDiv.style.display = "block";
             ciudad.setAttribute("required", "");
         }
+    });
+
+    $( ".ciudad" ).change(function() {
+        
+        if(ciudad.value == 'MEDELLIN'){
+
+        $('#programa')
+            .find('option')
+            .remove()
+            .end()
+            .append('<option value="MPUA">PREUNIVERSITARIO UDEA</option>')
+            .val('MPUA')
+            .append('<option value="MPUN">PREUNIVERSITARIO UNAL</option>')
+            .val('MPUN')
+            .append('<option value="MPMN">PREMÉDICO</option>')
+            .val('MPMN')
+            .append('<option value="MPIR">PREINGENIERO</option>')
+            .val('MPIR')
+            .append('<option value="MPSB">PREICFES SABER 11°</option>')
+            .val('MPSB')
+            .append('<option value="MINA">PREUNIVERSITARIO INTEGRADO UNAL UDEA</option>')
+            .val('MINA')
+            .append('<option value="MITP">PREUNIVERSITARIO INTEGRADO UDEA UNAL ICFES SABER 11°</option>')
+            .val('MITP')
+            .append('<option value="MCPF">CLASES PARTICULARES</option>')
+            .val('MCPF')
+            .append('<option value="none">--Seleccione--</option>')
+            .val('none');
+        }
+        if(ciudad.value == 'BOGOTA'){
+
+            $('#programa')
+            .find('option')
+            .remove()
+            .end()
+            .append('<option value="BPUN">PREUNIVERSITARIO UNAL</option>')
+            .val('BPUN')
+            .append('<option value="BINS">PREUNIVERSITARIO INTEGRADO UNAL SABER 11°</option>')
+            .val('BINS')
+            .append('<option value="BPIR">PREINGENIERO</option>')
+            .val('BPIR')
+            .append('<option value="BPMR">PREMÉDICO</option>')
+            .val('BPMR')
+            .append('<option value="BPSB">PREICFES SABER 11°</option>')
+            .val('BPSB')
+            .append('<option value="MCPF">CLASES PARTICULARES</option>')
+            .val('MCPF')
+            .append('<option value="none">--Seleccione--</option>')
+            .val('none');
+        }
+        if(ciudad.value == 'BARRANQUILLA'){
+
+            $('#programa')
+            .find('option')
+            .remove()
+            .end()
+            .append('<option value="QPSB">PREICFES SABER 11°</option>')
+            .val('QPSB')
+            .append('<option value="QPUC">PREUNIVERSITARIO CARTAGENA</option>')
+            .val('QPUC')
+            .append('<option value="QPMR">PREMÉDICO</option>')
+            .val('QPMR')
+            .append('<option value="QCPF">CLASES PARTICULARES</option>')
+            .val('QCPF')
+            .append('<option value="none">--Seleccione--</option>')
+            .val('none');
+        }
+        if(ciudad.value == 'BUCARAMANGA'){
+
+            $('#programa')
+            .find('option')
+            .remove()
+            .end()
+            .append('<option value="GPSB">PREICFES SABER 11°</option>')
+            .val('GPSB')
+            .append('<option value="GPMN">PREMÉDICO PREICFES SABER 11°</option>')
+            .val('GPMN')
+            .append('<option value="GCPF">CLASES PARTICULARES</option>')
+            .val('GCPF')
+            .append('<option value="none">--Seleccione--</option>')
+            .val('none');
+        }
+        if(ciudad.value == 'MANIZALES'){
+
+            $('#programa')
+            .find('option')
+            .remove()
+            .end()
+            .append('<option value="ZPUN">PREUNIVERSITARIO UNAL</option>')
+            .val('ZPUN')
+            .append('<option value="ZPSB">PREICFES SABER 11°</option>')
+            .val('ZPSB')
+            .append('<option value="ZINSF">PREUNIVERSITARIO INTEGRADO UDEA UNAL SABER 11°</option>')
+            .val('ZINSF')
+            .append('<option value="ZINS">PREUNIVERSITARIO INTEGRADO UNAL SABER 11°</option>')
+            .val('ZINS')
+            .append('<option value="ZCPF">CLASES PARTICULARES</option>')
+            .val('ZCPF')
+            .append('<option value="none">--Seleccione--</option>')
+            .val('none');
+        }
+        if(ciudad.value == 'CALI'){
+
+            $('#programa')
+            .find('option')
+            .remove()
+            .end()
+            .append('<option value="CPSB">PREICFES SABER 11°</option>')
+            .val('CPSB')
+            .append('<option value="CPMR">PREMÉDICO PREICFES SABER 11°</option>')
+            .val('CPMR')
+            .append('<option value="CINS">PREUNIVERSITARIO INTEGRADO UNAL SABER 11°</option>')
+            .val('CINS')
+            .append('<option value="CCPF">CLASES PARTICULARES</option>')
+            .val('CCPF')
+            .append('<option value="none">--Seleccione--</option>')
+            .val('none');
+        }
+        if(ciudad.value == 'none'){
+            if(metodologia.value == 'VIRTUAL'){
+                ciudad.value = 'none';
+                $('#programa')
+            .find('option')
+            .remove()
+            .end()
+            .append('<option value="VPSB">PREICFES SABER 11º</option>')
+            .val('none')
+            .append('<option value="VPUA">PREUNIVERSITARIO UDEA</option>')
+            .val('none')
+            .append('<option value="VPUN">PREUNIVERSITARIO UNAL</option>')
+            .val('none')
+            .append('<option value="VPCA">PREUNIVERSITARIO CAUCA</option>')
+            .val('none')
+            .append('<option value="VPUC">PREUNIVERSITARIO CARTAGENA</option>')
+            .val('none')
+            .append('<option value="VPUT">PREUNIVERSITARIO ATLÁNTICO</option>')
+            .val('none')
+            .append('<option value="VPMG">PREUNIVERSITARIO MAGDALENA</option>')
+            .val('none')
+            .append('<option value="none">--Seleccione--</option>')
+            .val('none');
+            }else{
+                $('#programa')
+            .find('option')
+            .remove()
+            .end()
+            .append('<option value="none">--Seleccione una ciudad--</option>')
+            .val('none');
+            }
+        }
+
     });
     
     function getJsonFromUrl(hashBased) {
@@ -51,11 +229,202 @@ var url = window.location.href;
 var obj = getJsonFromUrl(url);
     if(obj.length !== 0){
     meto.value = obj["metodologia"];
-    if(obj["metodologia"] === "VIRTUAL"){
-    ciudad.style.display = "none";
-    ciudad.value = "none";
-    }else{
-    ciudad.value = obj["ciudad"];
+        if(obj["metodologia"] === "VIRTUAL"){
+            ciudadDiv.style.display = "none";
+            jornadaDiv.style.display = "none";
+            ciudad.value = "none";
+            jornada.value = "none";
+        }else{
+            ciudad.value = obj["ciudad"];
+            jornada.value = obj["jornada"];
+            //programa.value = obj["programa"];
+            semestre.value = obj["semestre"];
+        }
     }
-}
+
+    if(ciudad.value == 'MEDELLIN'){
+
+        $('#programa')
+            .find('option')
+            .remove()
+            .end()
+            .append('<option value="MPUA">PREUNIVERSITARIO UDEA</option>')
+            .val('MPUA')
+            .append('<option value="MPUN">PREUNIVERSITARIO UNAL</option>')
+            .val('MPUN')
+            .append('<option value="MPMN">PREMÉDICO</option>')
+            .val('MPMN')
+            .append('<option value="MPIR">PREINGENIERO</option>')
+            .val('MPIR')
+            .append('<option value="MPSB">PREICFES SABER 11°</option>')
+            .val('MPSB')
+            .append('<option value="MINA">PREUNIVERSITARIO INTEGRADO UNAL UDEA</option>')
+            .val('MINA')
+            .append('<option value="MITP">PREUNIVERSITARIO INTEGRADO UDEA UNAL ICFES SABER 11°</option>')
+            .val('MITP')
+            .append('<option value="MCPF">CLASES PARTICULARES</option>')
+            .val('MCPF')
+            .append('<option value="none">--Seleccione--</option>')
+            .val('none');
+        }
+        if(ciudad.value == 'BOGOTA'){
+
+            $('#programa')
+            .find('option')
+            .remove()
+            .end()
+            .append('<option value="BPUN">PREUNIVERSITARIO UNAL</option>')
+            .val('BPUN')
+            .append('<option value="BINS">PREUNIVERSITARIO INTEGRADO UNAL SABER 11°</option>')
+            .val('BINS')
+            .append('<option value="BPIR">PREINGENIERO</option>')
+            .val('BPIR')
+            .append('<option value="BPMR">PREMÉDICO</option>')
+            .val('BPMR')
+            .append('<option value="BPSB">PREICFES SABER 11°</option>')
+            .val('BPSB')
+            .append('<option value="MCPF">CLASES PARTICULARES</option>')
+            .val('MCPF')
+            .append('<option value="none">--Seleccione--</option>')
+            .val('none');
+        }
+        if(ciudad.value == 'BARRANQUILLA'){
+
+            $('#programa')
+            .find('option')
+            .remove()
+            .end()
+            .append('<option value="QPSB">PREICFES SABER 11°</option>')
+            .val('QPSB')
+            .append('<option value="QPUC">PREUNIVERSITARIO CARTAGENA</option>')
+            .val('QPUC')
+            .append('<option value="QPMR">PREMÉDICO</option>')
+            .val('QPMR')
+            .append('<option value="QCPF">CLASES PARTICULARES</option>')
+            .val('QCPF')
+            .append('<option value="none">--Seleccione--</option>')
+            .val('none');
+        }
+        if(ciudad.value == 'BUCARAMANGA'){
+
+            $('#programa')
+            .find('option')
+            .remove()
+            .end()
+            .append('<option value="GPSB">PREICFES SABER 11°</option>')
+            .val('GPSB')
+            .append('<option value="GPMN">PREMÉDICO PREICFES SABER 11°</option>')
+            .val('GPMN')
+            .append('<option value="GCPF">CLASES PARTICULARES</option>')
+            .val('GCPF')
+            .append('<option value="none">--Seleccione--</option>')
+            .val('none');
+        }
+        if(ciudad.value == 'MANIZALES'){
+
+            $('#programa')
+            .find('option')
+            .remove()
+            .end()
+            .append('<option value="ZPUN">PREUNIVERSITARIO UNAL</option>')
+            .val('ZPUN')
+            .append('<option value="ZPSB">PREICFES SABER 11°</option>')
+            .val('ZPSB')
+            .append('<option value="ZINSF">PREUNIVERSITARIO INTEGRADO UDEA UNAL SABER 11°</option>')
+            .val('ZINSF')
+            .append('<option value="ZINS">PREUNIVERSITARIO INTEGRADO UNAL SABER 11°</option>')
+            .val('ZINS')
+            .append('<option value="ZCPF">CLASES PARTICULARES</option>')
+            .val('ZCPF')
+            .append('<option value="none">--Seleccione--</option>')
+            .val('none');
+        }
+        if(ciudad.value == 'CALI'){
+
+            $('#programa')
+            .find('option')
+            .remove()
+            .end()
+            .append('<option value="CPSB">PREICFES SABER 11°</option>')
+            .val('CPSB')
+            .append('<option value="CPMR">PREMÉDICO PREICFES SABER 11°</option>')
+            .val('CPMR')
+            .append('<option value="CINS">PREUNIVERSITARIO INTEGRADO UNAL SABER 11°</option>')
+            .val('CINS')
+            .append('<option value="CCPF">CLASES PARTICULARES</option>')
+            .val('CCPF')
+            .append('<option value="none">--Seleccione--</option>')
+            .val('none');
+        }
+        if(ciudad.value == 'none'){
+            if(metodologia.value == 'VIRTUAL'){
+                ciudad.value = 'none';
+                $('#programa')
+            .find('option')
+            .remove()
+            .end()
+            .append('<option value="VPSB">PREICFES SABER 11º</option>')
+            .val('none')
+            .append('<option value="VPUA">PREUNIVERSITARIO UDEA</option>')
+            .val('none')
+            .append('<option value="VPUN">PREUNIVERSITARIO UNAL</option>')
+            .val('none')
+            .append('<option value="VPCA">PREUNIVERSITARIO CAUCA</option>')
+            .val('none')
+            .append('<option value="VPUC">PREUNIVERSITARIO CARTAGENA</option>')
+            .val('none')
+            .append('<option value="VPUT">PREUNIVERSITARIO ATLÁNTICO</option>')
+            .val('none')
+            .append('<option value="VPMG">PREUNIVERSITARIO MAGDALENA</option>')
+            .val('none')
+            .append('<option value="none">--Seleccione--</option>')
+            .val('none');
+            }else{
+                $('#programa')
+            .find('option')
+            .remove()
+            .end()
+            .append('<option value="none">--Seleccione una ciudad--</option>')
+            .val('none');
+            }
+        }
+
+        if(obj.length !== 0)
+        {
+            programa.value = obj["programa"]; 
+        }
+        var prog = document.getElementById("programa");
+        progSpan = document.getElementById("bread2");
+        
+
+        var bread0 = document.getElementById("bread0");
+        var bread1 = document.getElementById("bread1");
+        var bread2 = document.getElementById("bread2");
+        var bread3 = document.getElementById("bread3");
+        var bread4 = document.getElementById("bread4");
+        
+        if(bread0.innerHTML === "none&nbsp;/&nbsp;")
+        {
+            bread0.style.display = 'none';
+        }
+        if(bread1.innerHTML === "none&nbsp;/&nbsp;")
+        {
+            bread1.style.display = 'none';
+        }
+        if(bread2.innerHTML === "none&nbsp;/&nbsp;")
+        {
+            bread2.style.display = 'none';
+        }
+        if(bread3.innerHTML === "none&nbsp;/&nbsp;")
+        {
+            bread3.style.display = 'none';
+        }
+        if(bread4.innerHTML === "none")
+        {
+            bread4.style.display = 'none';
+            progSpan.innerHTML = prog.options[prog.selectedIndex].text;
+        }else{
+            progSpan.innerHTML = prog.options[prog.selectedIndex].text+" / ";
+        }
+
 });

@@ -7,9 +7,19 @@ and open the template in the editor.
     Created on : 7/09/2018, 10:25:10 AM
     Author     : DISENADORWEB
 */
-
+.filtrosContainer{
+    padding: 20px 0px 35px 0px;
+    background: #1B3643;
+    width: 100%;
+}
+.filtro-cursos{
+    max-width: 1150px;
+    display: block;
+    margin: auto;
+}
 .filtro-cursos select{
     width: 100%;
+    min-width: 250px;
     display: block;
     padding: 5px;
     margin: 5px 5px 10px;
@@ -35,4 +45,180 @@ and open the template in the editor.
 
 .filtro-cursos label{
     margin-top: 10px;
+    color: #FFF !important;
 }
+.curso{
+    display: block;
+}
+.curso-mobile{
+    display: none;
+}
+.cuerpo-cursos{
+    display: flex;
+}
+.cuerpo-cursos table{
+    border-collapse: unset;
+}
+
+@media only screen and (max-width: 1024px){
+
+    .curso{
+        display: none;
+    }
+    .curso-mobile{
+        display: block;
+        padding: 20px;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 720px){
+    .filtro-cursos{
+    max-width: 700px;
+    padding: 0px 20px;
+    }
+    .filtro-cursos button{
+        min-width: 200px;
+        float: none;
+        margin: 20px auto;
+    }
+}
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .container {
+    margin: 0 auto;
+    padding: 50px 0 0;
+    max-width: 1280px;
+    width: 100%;
+  }
+  
+  .panel {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px 25px;
+    position: relative;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  .pricing-table {
+    box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.08), 0px 20px 31px 3px rgba(0, 0, 0, 0.09), 0px 8px 20px 7px rgba(0, 0, 0, 0.02);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media (min-width: 900px) {
+    .pricing-table {
+      flex-direction: row;
+    }
+  }
+  
+  .pricing-table * {
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .pricing-plan {
+    border-bottom: 1px solid #e1f1ff;
+    padding: 25px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+  }
+  
+  .pricing-plan.basic{
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    box-ordinal-group: 1;
+  }
+  .pricing-plan.cuarenta{
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    box-ordinal-group: 2;
+  }
+  .pricing-plan.premium{
+    -webkit-box-ordinal-group: 3;
+    -moz-box-ordinal-group: 3;
+    box-ordinal-group: 3;
+  }
+
+  .pricing-plan:last-child {
+    border-bottom: none;
+  }
+  
+  @media (min-width: 900px) {
+    .pricing-plan {
+      border-bottom: none;
+      border-right: 1px solid #e1f1ff;
+      flex-basis: 100%;
+      padding: 25px 50px;
+    }
+  
+    .pricing-plan:last-child {
+      border-right: none;
+    }
+  }
+  
+  .pricing-plan hr {
+    color: #888;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+  .pricing-features {
+    color: #016FF9;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 50px 0 25px;
+  }
+  
+  .pricing-features-item {
+    border-top: 1px solid #e1f1ff;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 15px 0;
+  }
+  
+  .pricing-features-item:last-child {
+    border-bottom: 1px solid #e1f1ff;
+  }
+  
+  .pricing-price {
+    color: #016FF9;
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+  }
+  
+  .pricing-button {
+    border: 1px solid #9dd1ff;
+    border-radius: 10px;
+    color: #348EFE;
+    display: inline-block;
+    margin: 25px 0;
+    padding: 15px 35px;
+    text-decoration: none;
+    transition: all 150ms ease-in-out;
+  }
+  
+  .pricing-button:hover,
+  .pricing-button:focus {
+    background-color: #e1f1ff;
+  }
+  
+  .pricing-button.is-featured {
+    background-color: #48aaff;
+    color: #fff;
+  }
+  
+  .pricing-button.is-featured:hover,
+  .pricing-button.is-featured:active {
+    background-color: #269aff;
+  }
