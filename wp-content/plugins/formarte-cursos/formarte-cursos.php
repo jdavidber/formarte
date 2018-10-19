@@ -41,9 +41,7 @@ curl_setopt_array($curlToken, array(
 $response = curl_exec($curlToken);
 
 $token = json_decode($response);
-    
-    
-    $accessToken = $token->access_token;
+$accessToken = $token->access_token;
 $apiUrl = 'https://www.q10academico.com/api/informacionHorarios';
 
 $ciudad = "";
@@ -73,71 +71,79 @@ curl_setopt($curl, CURLOPT_HTTPHEADER, ['Authorization: Bearer '.$accessToken]);
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 $json = curl_exec($curl);
 $cursos = json_decode($json);
-
 }
     ?>
         
         <div class="filtrosContainer">
-    <form class="filtro-cursos" method="get">
-<div class="vc_row wpb_row vc_row-fluid edgtf-section edgtf-content-aligment-left"><div class="clearfix edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner "><div class="wpb_wrapper">
-	<div class="wpb_text_column wpb_content_element ">
-		<div class="wpb_wrapper">
-                    <label>Metodología</label>
+    <form class="flex-form" method="get">
+
                     <select name="metodologia" id="metodologia" class="metodologia">
-                        <option value="none" selected>--Seleccione--</option>
+                        <option value="none" selected>Metodología</option>
                         <option value="PRESENCIAL" required>Presencial</option>
                         <option value="VIRTUAL">Virtual</option>
                     </select>
-                    <div id="ciudadDiv">
-                    <label>Ciudad</label>
+                    
+
                     <select name="ciudad" id="ciudad" class="ciudad">
-                        <option value="none" selected>--Seleccione--</option>
+                        <option value="none" selected>Ciudad</option>
                         <option value="MEDELLIN" required>Medellín</option>
                         <option value="BOGOTA">Bogotá</option>
                         <option value="BARRANQUILLA">Barranquilla</option>
                         <option value="BUCARAMANGA">Bucaramanga</option>
                         <option value="MANIZALES">Manizales</option>
                         <option value="CALI">Cali</option>
-                    </select></div>
-                    <label>Programa</label>
-                    <select name="programa" id="programa">
-                    <option value="none">--Seleccione una ciudad--</option>                      
                     </select>
-		</div>
-	</div>
-</div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner "><div class="wpb_wrapper">
-	<div class="wpb_text_column wpb_content_element ">
-		<div class="wpb_wrapper">
-                    <label>¿Cuando presentarás el examen?</label>
+
+                    <select name="programa" id="programa">
+                    <option value="none">Programa</option>                      
+                    </select>
+
                 <select name="semestre" id="semestre">
-                    <option value="none" selected>--Seleccione--</option>
+                    <option value="none" selected>¿Cuando presentarás el examen?</option>
                     <option value="2019-1" selected>2019-1</option>
                     <option value="2019-2" selected>2019-2</option>
                     </select>
-                    <div id="jornadaDiv">
-                        <label>Jornada</label>
+
                 <select name="jornada" id="jornada">
-                        <option value="none" selected>--Seleccione--</option>
+                        <option value="none" selected>Jornada</option>
                         <option value="SEMANA">Semana</option>
                         <option value="FIN DE SEMANA">Fin de semana</option>
                     </select>
-                    </div>
-                <button type="submit">Filtra tu programa</button>
-		</div>
-	</div>
-</div></div></div></div></div>
+                <input type="submit" value="Filtra tu programa">
 </form>
 </div>
 
 <?php
 if(isset($_GET['programa'])){ ?>
     
-<div class="breadcrums"><p><span id="bread0"><?php echo $metodologia ?>&nbsp;/&nbsp;</span><span id="bread1"><?php echo $ciudad ?>&nbsp;/&nbsp;</span><span id="bread2"></span><span id="bread3"><?php echo $semestre ?>&nbsp;/&nbsp;</span><span id="bread4"><?php echo $jornada ?></span></p></div>
-<div class="container">
-<div class="row cuerpo-cursos">
+<div class="breadcrums"><p><span id="bread0"><?php echo $metodologia ?>&nbsp;/&nbsp;</span><span id="bread1"><?php echo $ciudad ?>&nbsp;/&nbsp;</span><span id="bread2">&nbsp;/&nbsp;</span><span id="bread3"><?php echo $semestre ?>&nbsp;/&nbsp;</span><span id="bread4"><?php echo $jornada ?></span></p></div>
 <?php
-$clases = array("MCPD", "MCPF", "BCPD", "BCPF", "QCPD", "QCPF", "GCPF", "GCPD", "ZCPF", "ZCPD", "CCPD", "CCPF");
-        foreach($cursos as $cur)
+
+        $clases = array("MCPD", "MCPF", "BCPD", "BCPF", "QCPD", "QCPF", "GCPF", "GCPD", "ZCPF", "ZCPD", "CCPD", "CCPF");
+        if($metodologia == "PRESENCIAL")
+        {
+            ?>
+            <div class="cuerpo-cursos">
+            <div class="header-cursos wpb_column vc_column_container vc_col-sm-12">
+                <div class="vc_col-sm-2">
+                <p>Programa</p>
+                </div>
+                <div class="vc_col-sm-2">
+                <p>Fecha de inicio</p>
+                </div>
+                <div class="vc_col-sm-2">
+                <p>Horario</p>
+                </div>
+                <div class="vc_col-sm-2">
+                <p>Precio contado</p>
+                </div>
+                <div class="vc_col-sm-2">
+                <p>Precio financiado</p>
+                </div>
+                
+            </div>
+            <?php
+            foreach($cursos as $cur)
         {
             $sede = $cur->Sede;
             $codigo = substr($cur->Programa, 0, 4);
@@ -162,25 +168,43 @@ $clases = array("MCPD", "MCPF", "BCPD", "BCPF", "QCPD", "QCPF", "GCPF", "GCPD", 
                     if($codigo == $programa && $cur->Periodo == $semestre && $cur->Jornada == $jornada)
                     { 
                     $nombre = explode(" ", $cur->Programa, 2);
-                    $inicio = date("d/m/Y", strtotime($cur->Fecha_Inicio_Clases));
+                    $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+                    $fecha = strtotime($cur->Fecha_Inicio_Clases);
+                    $mes = $meses[date('m', $fecha)-1];
+                    $inicio = date("d ", $fecha)."de ".$mes." del ".date("Y", $fecha);
                     $horario = explode(",", $cur->Descripcion);
                     ?>
-                    <div class="curso">
-                    <?php
-                    echo $nombre[1]." $".number_format($cur->Valor_Contado, 0, '', '.')." Fecha de inicio: ".$inicio."Horario: ".$horario[0]."<br>";
-                    ?>
+                    <div class="curso wpb_column vc_column_container vc_col-sm-12">
+                        <div class="vc_col-md-2 vc_col-sm-12 ingroup">
+                            <span class="title">Programa: </span><?php echo "<span class='info'>".$nombre[1]."</span>"; ?>
+                        </div>
+                        <div class="vc_col-md-2 vc_col-sm-12 ingroup">
+                            <span class="title">Fecha de inicio: </span><?php echo "<span class='info'>".$inicio."</span>"; ?>
+                        </div>
+                        <div class="vc_col-md-2 vc_col-sm-12 ingroup">
+                            <span class="title">Horario: </span><?php echo "<span class='info'>".$horario[0]."</span>"; ?>
+                        </div>
+                        <div class="vc_col-md-2 vc_col-sm-12 ingroup">
+                            <span class="title">Valor de contado: </span><?php echo "<span class='info'>$".number_format($cur->Valor_Contado, 0, '', '.')."</span>"; ?>
+                        </div>
+                        <div class="vc_col-md-2 vc_col-sm-12 ingroup">
+                            <span class="title">Valor a credito: </span><?php echo "<span class='info'>$".number_format($cur->Valor_Financiado, 0, '', '.')."</span>"; ?>
+                        </div>
+                        <div class="vc_col-md-2 vc_col-sm-12 ingroup">
+                            <?php echo "<a href='http://formartecentral.q10academico.com/formarte/preinscripcion/".$cur->Consecutivo."' target='blank'>Preinscribirme</a>"; ?>
+                        </div>
                     </div>
-                    <div class="curso-mobile">
-                    <?php
-                    echo $nombre[1]."<br> $".number_format($cur->Valor_Contado, 0, '', '.')."<br>Fecha de inicio: ".$inicio."<br>Horario: ".$horario[0]."<br>";
-                    ?>
-                    </div>
+                    
                         <?php
                         $result = true;
                     }
                 }
             }
         }
+        ?>
+            </div>
+            <?php
+        }elseif($metodologia == "VIRTUAL"){
         //Cusrsos virtuales
         ?>
         <div class="container">
@@ -221,6 +245,7 @@ $clases = array("MCPD", "MCPF", "BCPD", "BCPF", "QCPD", "QCPF", "GCPF", "GCPD", 
             {
                 $nombre = explode(" ", $cur->Programa, 2);
                 $desc = explode("+",$cur->Descripcion);
+                $finalizaVirtual = explode(",", $desc[count($desc)-1]);
                 if($codigo == $basic)
                 { ?>
                     <table class="pricing-plan basic">
@@ -230,7 +255,7 @@ $clases = array("MCPD", "MCPF", "BCPD", "BCPF", "QCPD", "QCPF", "GCPF", "GCPD", 
                             </th>
                         </tr>
                         <tr>
-                            <td><ul class="pricing-features"><?php foreach ($desc as $d){ echo "<li class='pricing-features-item'>".$d."</li>"; } ?></ul></td>
+                            <td><ul class="pricing-features"><?php for($i = 0; $i<count($desc)-1; $i++){ echo "<li class='pricing-features-item'>".$desc[$i]."</li>"; } echo "<li class='pricing-features-item'>".$finalizaVirtual[0]."</li>"; ?></ul></td>
                         </tr>
                         <tr>
                             <td>Valor de contado:<br><?php echo "$".number_format($cur->Valor_Contado, 0, '', '.'); ?></td>
@@ -249,7 +274,7 @@ $clases = array("MCPD", "MCPF", "BCPD", "BCPF", "QCPD", "QCPF", "GCPF", "GCPD", 
                             </th>
                         </tr>
                         <tr>
-                            <td><ul class="pricing-features"><?php foreach ($desc as $d){ echo "<li class='pricing-features-item'>".$d."</li>"; } ?></ul></td>
+                            <td><ul class="pricing-features"><?php for($i = 0; $i<count($desc)-1; $i++){ echo "<li class='pricing-features-item'>".$desc[$i]."</li>"; } echo "<li class='pricing-features-item'>".$finalizaVirtual[0]."</li>"; ?></ul></td>
                         </tr>
                         <tr>
                             <td>Valor de contado:<br><?php echo "$".number_format($cur->Valor_Contado, 0, '', '.'); ?></td>
@@ -268,7 +293,7 @@ $clases = array("MCPD", "MCPF", "BCPD", "BCPF", "QCPD", "QCPF", "GCPF", "GCPD", 
                             </th>
                         </tr>
                         <tr>
-                            <td><ul class="pricing-features"><?php foreach ($desc as $d){ echo "<li class='pricing-features-item'>".$d."</li>"; } ?></ul></td>
+                            <td><ul class="pricing-features"><?php for($i = 0; $i<count($desc)-1; $i++){ echo "<li class='pricing-features-item'>".$desc[$i]."</li>"; } echo "<li class='pricing-features-item'>".$finalizaVirtual[0]."</li>"; ?></ul></td>
                         </tr>
                         <tr>
                             <td>Valor de contado:<br><?php echo "$".number_format($cur->Valor_Contado, 0, '', '.'); ?></td>
@@ -281,17 +306,24 @@ $clases = array("MCPD", "MCPF", "BCPD", "BCPF", "QCPD", "QCPF", "GCPF", "GCPD", 
                 $result = true;
             }
         }
+    }
         ?>
-        </div></div>
+        </div>
+        
+        </div>
         <?php
         if(!$result)
         {
-            echo "no hay resultados";
+            echo "<div class='cuerpo-cursos'>";
+            echo "<p>no hay resultados</p>";
+            echo "</div>";
+        }else
+        {
+            echo "<div class='cuerpo-cursos'>";
+            echo "<p>Todos los programas terminan una semana antes del examen.</p>";
+            echo "</div>";
         }
-?>
-    </div>
-</div>
-  <?php  }
+  }
 }
 
 add_shortcode('FORMARTE_CURSOS_ACTUAL', 'Index');

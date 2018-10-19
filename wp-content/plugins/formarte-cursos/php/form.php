@@ -1,8 +1,8 @@
 <?php
 
-$curlToken = curl_init();
+$curl = curl_init();
 
-curl_setopt_array($curlToken, array(
+curl_setopt_array($curl, array(
   CURLOPT_URL => "https://www.q10academico.com/token",
   CURLOPT_RETURNTRANSFER => true,
   CURLOPT_ENCODING => "",
@@ -12,12 +12,12 @@ curl_setopt_array($curlToken, array(
   CURLOPT_CUSTOMREQUEST => "POST",
   CURLOPT_POSTFIELDS => "UserName=apihorarios&Password=0c904eca8fb3&grant_type=password&aplentId=F2BD7F9A-10E2-4E1D-8F84-B8A30201F967",
   CURLOPT_HTTPHEADER => array(
-    "Content-Type: application/x-www-form-urlencoded",
-    "Postman-Token: d696d6e3-961f-4c20-af69-3a6486b3db91",
+    "Postman-Token: 72320c66-dd54-406a-9c9b-483e38ac3382",
     "cache-control: no-cache"
   ),
 ));
 
-$response = curl_exec($curlToken);
-
-$token = json_decode($response);
+$response = curl_exec($curl);
+$err = curl_error($curl);
+var_dump($response);
+curl_close($curl);
