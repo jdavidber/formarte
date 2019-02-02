@@ -7,10 +7,83 @@ and open the template in the editor.
     Created on : 7/09/2018, 10:25:10 AM
     Author     : DISENADORWEB
 */
+
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+
+.progress 
+{
+    position: absolute;
+ left: 0px;
+ top: 0px;
+ width: 100%;
+ height: 100%;
+ z-index: 9999;
+ background-color: #F2F2F2;
+}
+.bar 
+{ 
+  background-color: #819FF7; 
+  width:0%; 
+  height:5px; 
+  border-radius: 3px; 
+}
+.percent 
+{ 
+  position:absolute; 
+  display:inline-block; 
+  top:3px; 
+  left:48%; 
+}
+select{
+    border-radius: 0px;
+}
+.cuerpo-cursos h2, h3, p{
+    color: #4D607A;
+}
+.preHeader h2, h3, p{
+    color: #4D607A;
+}
+.preHeader {
+    margin-bottom: 20px;
+}
+.cuerpo-cursos p{
+    font-weight: 400;
+    line-height: 1.2em;
+}
 .filtrosContainer{
     padding: 30px 0px 30px 0px;
-    background: #1B3643;
+    background: url(http://formarte.edu.co/medellin/wp-content/uploads/sites/4/2018/11/Fondo-filtros.jpg) no-repeat;
+    background-size: cover;
+    background-position-x: center;
     width: 100%;
+}
+.filtrosContainer h1{
+    color: #FFF;
+    text-align: center;
+    font-family: Source Sans Pro;
+    font-size: 2em;
+    font-weight: lighter !important;
+}
+.extraterrestreContainer{
+    width: 100%;
+    display: block;
+    height: 100px;
+    margin: auto;
+}
+.extraterrestreContainer .extraterrestre{
+    background: url("http://formarte.edu.co/wp-content/uploads/2018/10/Alien-final.gif") round;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+.extraterrestreContainer .extraterrestre2{
+    background: url("http://formarte.edu.co/wp-content/uploads/2018/10/Alien-volador.gif") round;
+    width: 50px;
+    height: 100px;
+    position: absolute;
+    left: -50px;
 }
 .filtro-cursos{
     max-width: 1150px;
@@ -49,55 +122,204 @@ and open the template in the editor.
     margin-top: 10px;
     color: #FFF !important;
 }
+.breadcrumbs{
+    margin: 20px auto;
+    text-align: center;
+    font-weight: 500;
+    max-width: 1280px;
+    text-transform: uppercase;
+}
+.botonMasMenos{
+    display: block;
+    width: 100%;
+    margin: 10px;
+    text-align: right;
+}
+#masMenos{
+    font-size: 1.2em;
+    color: #05e06d;
+    border: none;
+    background: transparent;
+    float: right;
+    cursor: pointer;
+}
+.linkVermas a{
+    display: block;
+    color: #05e06d;
+    border: solid 2px #05e06d;
+    padding: 5px 10px;
+    text-align: center;
+    margin: 10px auto;
+}
+.linkVermas a:hover{
+    background: #05e06d;
+    color: white;
+}
+.breadcrumbs .breadInner{
+    display: inline;
+    color: #05e06d;
+}
+#listaCursos{
+    max-width: 1280px;
+    margin: auto;
+}
+#listaCursos  .finCurso{
+    text-align: center;
+    font-size: 1.2em;
+}
 .curso{
     display: block;
-    padding: 10px 0px;
+    text-align: center;
+    border-top: solid 1px rgba(0,0,0,0.08);
 }
-.curso:nth-child(even){
-  background: white;
+.curso:first-child{
+    border-top: none !important;
+}
+.descuento{
+    font-family: 'sciflysans', Source Sans Pro !important;
+    color: #05e06d;
+    font-size: 3em;
+}
+.hasta{
+    color: #05e06d;
+    font-weight: 400;
+}
+/*.curso:nth-child(even){
+  background: #F9F9FF;
 }
 .curso:nth-child(odd){
-  background: #cecece1f;
+  background: #FFF;
+}*/
+.curso:hover{
+    background: #F9F9FF;
 }
+.curso:nth-child(odd) .descDiv{
+    background: #f7f8fe;
+}
+.curso:nth-child(even) .descDiv{
+    background: #f3f4fe;
+}
+
 .curso-mobile{
     display: none;
 }
 .cuerpo-cursos{
-    display: block;
+    display: inline-block;
     max-width: 1280px;
     margin: auto;
+    -webkit-box-shadow: 0px 0px 20px -3px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 20px -3px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 20px -3px rgba(0,0,0,0.1);
 }
 .header-cursos{
   display: block;
+  text-align: center;
+}
+.header-cursos .verde{
+    background: #05e06d;
+    color: white;
+    font-size: 1.2em;
+    height: 60px;
+    margin: auto;
+}
+.header-cursos .verde p{
+    color: white;
+}
+.header-cursos .purpura{
+    background: #5F55FF;
+    color: white;
+    font-size: 1.2em;
+    height: 60px;
+    margin: auto;
+}
+.header-cursos .purpura p{
+    color: white;
+}
+.header-cursos .naranja{
+    background: #FF8A00;
+    color: white;
+    font-size: 1.2em;
+    height: 60px;
+    margin: auto;
+}
+.header-cursos .naranja p{
+    color: white;
+}
+.header1{
+    background: #05e06d;
+    color: white;
 }
 
   /*Hack to get them to align properly */
   .flex-form > *:not([type="select"]) {
     border-top:1px solid white;
     border-bottom:1px solid white;
-    width: inherit;
   }
-  
+  .flex-form #metodologia{
+      width: 15%;
+      border-radius: 8px 0px 0px 8px;
+    font-weight: bold;
+  }
+  .flex-form #ciudad{
+      width: 10%;
+    font-weight: bold;
+  }
+  .flex-form #programa{
+      width: 25%;
+    font-weight: bold;
+  }
+  .flex-form #semestre{
+      width: 22%;
+    font-weight: bold;
+  }
+  .flex-form #jornada{
+      width: 13%;
+    font-weight: bold;
+  }
+  .flex-form #filtrosEnviar{
+      width: 15%;
+    font-weight: bold;
+  }
+  .flex-form option:nth-child(1) {
+    font-weight:bold;
+}
   .flex-form input[type="submit"] {
-    background:#05e06d;
-    border-top: 1px solid #05e06d;
-    border-bottom: 1px solid #05e06d;
     color:white;
     cursor: pointer;
-    opacity: 0.8;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 0px 8px 8px 0px;
+    background: #05e06d; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #05e06d 0%, #2bded7 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #05e06d 0%,#2bded7 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #05e06d 0%,#2bded7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05e06d', endColorstr='#2bded7',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
   }
   .flex-form input[type="submit"]:hover {
-    opacity: 1;
+    background: #2bded7; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #2bded7 0%, #05e06d 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #2bded7 0%,#05e06d 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #2bded7 0%,#05e06d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2bded7', endColorstr='#05e06d',GradientType=1 );
+  }
+  .flex-form input[type="submit"]:active {
+    transform: scale(0.99);
   }
   
   .flex-form > * {
     border:0;
-    padding:10px;
+    padding:20px 10px;
     line-height:30px;
     font-size: 14px;
+    color: #4D607A;
     border-radius:0;
     outline:0;
     border-right:1px solid rgba(0,0,0,0.2);
+    appearance: none;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    background: url("http://formarte.edu.co/medellin/wp-content/uploads/sites/4/2018/11/arrow.jpg") #FFF right 5px top 50% no-repeat;
     }
   
   .flex-form > *:last-child {
@@ -109,9 +331,11 @@ and open the template in the editor.
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    border-radius: 5px;
     width: 80%;
-    margin: auto;
+    margin: auto auto 20px auto;
+    -webkit-box-shadow: 0px 0px 20px -3px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 20px -3px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 20px -3px rgba(0,0,0,0.1);
   }
   
   *, *:before, *:after {
@@ -121,7 +345,7 @@ and open the template in the editor.
   .container {
     margin: 0 auto;
     padding: 50px 0 0;
-    max-width: 1280px;
+    max-width: 960px !important;
     width: 100%;
   }
   
@@ -133,87 +357,137 @@ and open the template in the editor.
     width: 100%;
     z-index: 10;
   }
-  
-  .pricing-table {
-    box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.08), 0px 20px 31px 3px rgba(0, 0, 0, 0.09), 0px 8px 20px 7px rgba(0, 0, 0, 0.02);
+  .cursosVirtual{
     display: flex;
-    flex-direction: column;
+    margin: 50px auto;
   }
-  .pricing-table * {
-    text-align: center;
-    text-transform: uppercase;
-    border-collapse: unset;
-    border: none;
+  .cursosVirtual .containerContenido{
+      display: block;
+      height: 460px;
+      margin-top: -80px;
   }
-  
+  .cursosVirtual .containerContenido span{
+      color: #5F55FF;
+  }
+  .cursosVirtual .destacado{
+        width: 100px;
+        height: 100px;
+        background: #4643E6;
+        position: relative;
+        right: -380px;
+        top: -60px;
+        border-radius: 50px;
+        opacity: 0;
+  }
+  .cursosVirtual .nodestacado{
+        width: 100px;
+        height: 100px;
+        background: #4643E6;
+        position: relative;
+        right: -380px;
+        top: -60px;
+        border-radius: 50px;
+        opacity: 0;
+  }
+  .contenidoVirtual{
+      display: block;
+      padding: 0px 30px;
+  }
+  .descuentoVirtual{
+      padding: 20px;
+      display: block;
+      width: 100%;
+      background: #05e06d;
+      color: #FFF;
+      font-weight: bold;
+      font-size: 1.2em;
+  }
+  .descuentoVirtual span{
+      font-size: 2.5em;
+      vertical-align: middle;
+  }
+  .contadoVirtual{
+    color: #05e06d;
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: 1.8em;
+  }
+  .contadoVirtual .antes{
+      font-size: 1.6em;
+      text-decoration: line-through;
+      font-weight: 400;
+      color: #BBC1C4;
+  }
+  .contadoVirtual .ahora{
+      font-size: 1.6em;
+      font-weight: bold;
+      color: #4D607A;
+  }
   .pricing-plan {
-    border-bottom: none;
-    border-right: none;
-    flex-basis: 100%;
-    padding: 25px 50px;
-  }
-
-  .pricing-plan:last-child {
-    border-right: 1px solid #e1f1ff;
-  }
-  
-  .pricing-plan hr {
-    color: #888;
-    font-weight: 600;
-    letter-spacing: 1px;
-  }
-  
-  .pricing-features {
-    color: #016FF9;
-    font-weight: 600;
-    letter-spacing: 1px;
-    margin: 50px 0 25px;
-  }
-  
-  .pricing-features-item {
-    border-top: 1px solid #e1f1ff;
-    font-size: 12px;
-    line-height: 1.5;
-    padding: 15px 0;
-  }
-  
-  .pricing-features-item:last-child {
-    border-bottom: 1px solid #e1f1ff;
-  }
-  
-  .pricing-price {
-    color: #016FF9;
+    -webkit-box-shadow: 0px 0px 20px -3px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 20px -3px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 20px -3px rgba(0,0,0,0.1);
     display: block;
-    font-size: 32px;
-    font-weight: 700;
+    width: 45%;
+    margin: auto;
+    text-align: center;
+    color: #4D607A !important;
   }
-  
-  .pricing-button {
-    border: 1px solid #9dd1ff;
-    border-radius: 10px;
-    color: #348EFE;
-    display: inline-block;
-    margin: 25px 0;
-    padding: 15px 35px;
-    text-decoration: none;
-    transition: all 150ms ease-in-out;
+  .pricing-plan li{
+      list-style-image: url("http://formarte.edu.co/medellin/wp-content/uploads/sites/4/2018/11/li.png");
+      font-weight: bold;
+      line-height: 2.5em;
+  }
+  .pricing-plan hr{
+      width: 80%;
+      text-align: center;
+      opacity: 0.6;
+  }
+  .pricing-plan .precios{
+      display: block;
+      height: 280px;
+      padding: 30px 0px 0px 0px;
+  }
+  .pricing-plan .botones{
+      display: inline-flex;
+      margin-bottom: 30px;
+  }
+  .pricing-plan .botones .verCurso a{
+      border: solid 1px #05e06d;
+      color: #05e06d;
+      font-size: 1.2em;
+      font-weight: bold;
+      width: 150px;
+      display: block;
+      margin-right: 5px;
+      padding: 10px;
+      text-align: center;
+  }
+  .pricing-plan .botones .tomarCurso a{
+      border: solid 1px #5F55FF;
+      background: #5F55FF;
+      color: #FFF;
+      font-size: 1.2em;
+      font-weight: bold;
+      width: 150px;
+      display: block;
+      margin-left: 5px;
+      padding: 10px;
+      text-align: center;
+  }
+  .pricing-plan .botones .verCurso a:hover{
+      background: #05e06d;
+      color: white;
+  }
+  .pricing-plan .botones .tomarCurso a:hover{
+      background: #460DDB;
+      border: solid 1px #460DDB;
   }
   
   .pricing-button:hover,
   .pricing-button:focus {
     background-color: #e1f1ff;
   }
-  
-  .pricing-button.is-featured {
-    background-color: #48aaff;
-    color: #fff;
-  }
-  
-  .pricing-button.is-featured:hover,
-  .pricing-button.is-featured:active {
-    background-color: #269aff;
-  }
-
   .basic{
     order: 1;
     -webkit-order: 1;
@@ -231,27 +505,134 @@ and open the template in the editor.
   }
   .curso .info{
     display: block;
+    font-family: Source Sans Pro;
+    font-weight: 500;
+  }
+  .contado{
+      color: #BBC1C4;
+      text-decoration: line-through;
+      font-size: 1.3em;
+  }
+  .contadoDesc{
+      color: #2A3945;
+      font-size: 1.4em;
   }
   .ingroup{
-    display: flex;
+    display: block;
+    padding: 15px;
   }
   .ingroup a{
     display: table;
     margin: 5px auto;
     padding: 5px 10px;
-    background: #05e06d;
+    background: #FF8A00;
     color: #FFF;
   }
+  .ingroup a:hover{
+      background: #05e06d;
+  }
   
+  /* Validaciones */
+.tooltip {
+    position: relative;
+    display: block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+    transform: rotate(180deg);
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+ 
+.noResults{
+    color: #05e06d;
+    text-align: center;
+    display: block;
+    max-width: 1280px;
+    margin: 30px auto;
+}
+@media only screen and (max-width: 1360px){
+    .flex-form{
+        width: 90%;
+    }
+}
   @media only screen and (max-width: 991px){
 
     .header-cursos{
       display: none;
     }
+    .cuerpo-cursos{
+        display: inline-block;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        width: 100%;
+    }
+    #listaCursos{
+        width: 90%
+    }
+    .curso{
+        width: 100%;
+        border-top: none;
+        margin: 20px auto;
+        -webkit-box-shadow: 0px 0px 20px -3px rgba(0,0,0,0.1);
+        -moz-box-shadow: 0px 0px 20px -3px rgba(0,0,0,0.1);
+        box-shadow: 0px 0px 20px -3px rgba(0,0,0,0.1);
+    }
     .curso .title{
       display: table-cell;
-      min-width: 120px;
+      width: 40%;
       font-weight: 600;
+      text-align: left;
+    }
+    .curso .info{
+        text-align: center;
+    }
+    .curso .descuento, .hasta{
+        color: #FFF;
+    }
+    .curso .descDiv{
+        background: #05e06d !important;
+        color: #FFF !important;
+    }
+    .extraterrestre, .extraterrestre2{
+        display: none;
+    }
+    .ingroup{
+        display: table;
+        width: 100%;
+        padding: 5px;
+    }
+    .ingroup a{
+        width: 100%;
     }
     .flex-form > *:not([type="select"]) {
       border-top:1px solid gray;
@@ -261,11 +642,38 @@ and open the template in the editor.
     .flex-form {
       display: grid;
     }
-}
-@media (min-width: 900px) {
-  .pricing-table {
-    flex-direction: row;
+    .flex-form #metodologia{
+      width: 100%;
+      border-radius: 8px 8px 0px 0px;
   }
+  .flex-form #ciudad{
+      width: 100%;
+  }
+  .flex-form #programa{
+      width: 100%;
+  }
+  .flex-form #semestre{
+      width: 100%;
+  }
+  .flex-form #jornada{
+      width: 100%;
+  }
+  .flex-form #filtrosEnviar{
+      width: 100%;
+  }
+  .flex-form input[type="submit"] {
+    border-radius: 0px 0px 8px 8px;
+  }
+  .flex-form select:first-child{
+    border-radius: 8px 8px 0px 0px;
+}
+.pricing-plan{
+    width: 90%;
+    margin-top: 30px;
+}
+.cursosVirtual{
+    display: block;
+}
 }
 
 @media only screen and (max-width: 720px){
@@ -278,4 +686,80 @@ and open the template in the editor.
         float: none;
         margin: 20px auto;
     }
+    .flex-form{
+        width: 90%;
+    }
+}
+
+#circle1{
+    width: 100px;
+    height: 100px;
+    display: block;
+    position: absolute;
+    border-radius: 500px;
+    margin: 0px;
+    border: solid 5px rgba(95,85,255,1); 
+}
+
+#star1{
+    width: 5px;
+    height: 5px;
+    display: block;
+    position: absolute;
+    border-radius: 500px;
+    margin: 40px;
+    background: url("http://formarte.edu.co/wp-content/uploads/2018/11/star.png");
+    background-size: contain;
+}
+
+#star2{
+    width: 5px;
+    height: 5px;
+    display: block;
+    position: absolute;
+    border-radius: 500px;
+    margin: 20px;
+    background: url("http://formarte.edu.co/wp-content/uploads/2018/11/star.png");
+    background-size: contain;
+}
+#star3{
+    width: 5px;
+    height: 5px;
+    display: block;
+    position: absolute;
+    border-radius: 500px;
+    margin: 70px 15px;
+    background: url("http://formarte.edu.co/wp-content/uploads/2018/11/star.png");
+    background-size: contain;
+}
+
+#star4{
+    width: 5px;
+    height: 5px;
+    display: block;
+    position: absolute;
+    border-radius: 500px;
+    margin: 30px 70px;
+    background: url("http://formarte.edu.co/wp-content/uploads/2018/11/star.png");
+    background-size: contain;
+}
+#star5{
+    width: 5px;
+    height: 5px;
+    display: block;
+    position: absolute;
+    border-radius: 500px;
+    margin: 60px 20px;
+    background: url("http://formarte.edu.co/wp-content/uploads/2018/11/star.png");
+    background-size: contain;
+}
+#star6{
+    width: 5px;
+    height: 5px;
+    display: block;
+    position: absolute;
+    border-radius: 500px;
+    margin: 70px 50px;
+    background: url("http://formarte.edu.co/wp-content/uploads/2018/11/star.png");
+    background-size: contain;
 }

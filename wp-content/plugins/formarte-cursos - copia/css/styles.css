@@ -1,0 +1,312 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 7/09/2018, 10:25:10 AM
+    Author     : DISENADORWEB
+*/
+.filtrosContainer{
+    padding: 30px 0px 30px 0px;
+    background: #1B3643;
+    width: 100%;
+}
+.filtro-cursos{
+    max-width: 1150px;
+    display: flex;
+    margin: auto;
+}
+.filtro-cursos select{
+    width: 16%;
+    display: block;
+    padding: 5px;
+    margin: 5px 5px 10px;
+    border-radius: 15px;
+}
+.filtro-cursos label{
+  display: inline;
+}
+.filtro-cursos button{
+    display: block;
+    float: right;
+    width: 60%;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 15px;
+    border: none;
+    margin-top: 20px;
+    background: #05e06d;
+    color: #FFF;
+    font-size: 16px;
+}
+.filtro-cursos button:active{
+    transform: scale(0.9);
+}
+
+.filtro-cursos label{
+    margin-top: 10px;
+    color: #FFF !important;
+}
+.breadcrumbs{
+    display: inline-flex;
+    margin: 10px;
+}
+.breadcrumbs .linkVermas{
+    display: block;
+}
+.breadcrumbs .breadInner{
+    display: block;
+    padding: 8px;
+    background: #05e06d;
+    color: #FFF;
+}
+.breadcrumbs .pre{
+    display: block;
+    height: auto;
+    background: #05e06d;
+    border-top: solid 20px transparent;
+    border-bottom: solid 20px transparent;
+    border-left: solid 10px white;
+}
+.breadcrumbs .pos{
+    display: block;
+    height: auto;
+    background: white;
+    border-top: solid 20px transparent;
+    border-bottom: solid 20px transparent;
+    border-left: solid 10px #05e06d;
+}
+.curso{
+    display: block;
+    padding: 10px 0px;
+}
+.curso:nth-child(even){
+  background: white;
+}
+.curso:nth-child(odd){
+  background: #cecece1f;
+}
+.curso-mobile{
+    display: none;
+}
+.cuerpo-cursos{
+    display: block;
+    max-width: 1280px;
+    margin: auto;
+}
+.header-cursos{
+  display: block;
+}
+
+  /*Hack to get them to align properly */
+  .flex-form > *:not([type="select"]) {
+    border-top:1px solid white;
+    border-bottom:1px solid white;
+    width: inherit;
+  }
+  
+  .flex-form input[type="submit"] {
+    background: rgba(5, 224, 109, 0.5);
+    border-top: 1px solid rgba(5, 224, 109, 0);
+    border-bottom: 1px solid rgba(5, 224, 109, 0);
+    color:white;
+    cursor: pointer;
+  }
+  .flex-form input[type="submit"]:hover {
+    background: rgba(5, 224, 109, 1);
+  }
+  .flex-form input[type="submit"]:active {
+    transform: scale(0.99);
+  }
+  
+  .flex-form > * {
+    border:0;
+    padding:10px;
+    line-height:30px;
+    font-size: 14px;
+    border-radius:0;
+    outline:0;
+    border-right:1px solid rgba(0,0,0,0.2);
+    }
+  
+  .flex-form > *:last-child {
+    border-right: 0;
+  }
+  
+  .flex-form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 5px;
+    width: 80%;
+    margin: auto;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .container {
+    margin: 0 auto;
+    padding: 50px 0 0;
+    max-width: 1280px;
+    width: 100%;
+  }
+  
+  .panel {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px 25px;
+    position: relative;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  .pricing-table {
+    box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.08), 0px 20px 31px 3px rgba(0, 0, 0, 0.09), 0px 8px 20px 7px rgba(0, 0, 0, 0.02);
+    display: flex;
+    flex-direction: column;
+  }
+  .pricing-table * {
+    text-align: center;
+    text-transform: uppercase;
+    border-collapse: unset;
+    border: none;
+  }
+  
+  .pricing-plan {
+    border-bottom: none;
+    border-right: none;
+    flex-basis: 100%;
+    padding: 25px 50px;
+  }
+
+  .pricing-plan:last-child {
+    border-right: 1px solid #e1f1ff;
+  }
+  
+  .pricing-plan hr {
+    color: #888;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+  .pricing-features {
+    color: #016FF9;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 50px 0 25px;
+  }
+  
+  .pricing-features-item {
+    border-top: 1px solid #e1f1ff;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 15px 0;
+  }
+  
+  .pricing-features-item:last-child {
+    border-bottom: 1px solid #e1f1ff;
+  }
+  
+  .pricing-price {
+    color: #016FF9;
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+  }
+  
+  .pricing-button {
+    border: 1px solid #9dd1ff;
+    border-radius: 10px;
+    color: #348EFE;
+    display: inline-block;
+    margin: 25px 0;
+    padding: 15px 35px;
+    text-decoration: none;
+    transition: all 150ms ease-in-out;
+  }
+  
+  .pricing-button:hover,
+  .pricing-button:focus {
+    background-color: #e1f1ff;
+  }
+  
+  .pricing-button.is-featured {
+    background-color: #48aaff;
+    color: #fff;
+  }
+  
+  .pricing-button.is-featured:hover,
+  .pricing-button.is-featured:active {
+    background-color: #269aff;
+  }
+
+  .basic{
+    order: 1;
+    -webkit-order: 1;
+  }
+  .cuarenta{
+    order: 2;
+    -webkit-order: 2;
+  }
+  .premium{
+    order: 3;
+    -webkit-order: 3;
+  }
+  .curso .title{
+    display: none;
+  }
+  .curso .info{
+    display: block;
+  }
+  .ingroup{
+    display: flex;
+  }
+  .ingroup a{
+    display: table;
+    margin: 5px auto;
+    padding: 5px 10px;
+    background: #05e06d;
+    color: #FFF;
+  }
+  
+  @media only screen and (max-width: 991px){
+
+    .header-cursos{
+      display: none;
+    }
+    .curso .title{
+      display: table-cell;
+      min-width: 120px;
+      font-weight: 600;
+    }
+    .flex-form > *:not([type="select"]) {
+      border-top:1px solid gray;
+      border-bottom:1px solid gray;
+      width: 100%;
+    }  
+    .flex-form {
+      display: grid;
+    }
+}
+@media (min-width: 900px) {
+  .pricing-table {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 720px){
+    .filtro-cursos{
+    max-width: 700px;
+    padding: 0px 20px;
+    }
+    .filtro-cursos button{
+        min-width: 200px;
+        float: none;
+        margin: 20px auto;
+    }
+}

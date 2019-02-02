@@ -1,8 +1,7 @@
 <div class="vc_row wpb_row vc_row-fluid edgtf-section vc_custom_1448263237194 edgtf-content-aligment-left edgtf-row-columns-same-height edgtf-grid-section" style="opacity: 1; margin-top: 30px!important; margin-bottom: 50px!important;">
 	<div class="clearfix edgtf-section-inner">
 		<div class="edgtf-section-inner-margin clearfix">
-			<?php $currentSite = get_blog_details($site['blog_id']); $currentCity = str_replace('/','',$currentSite->path);?>
-			<?php if($currentCity != 'idiomas'){ ?>
+		
 			<div class="wpb_column vc_column_container vc_col-sm-2" style="min-height: 64px;">
 				<div class="wpb_wrapper">
 					<div class="wpb_text_column wpb_content_element ">
@@ -15,8 +14,7 @@
 					</div>
 				</div>
 			</div>
-			<?php } ?>
-			<?php if($currentCity != 'idiomas'){ ?>
+			
 			<div class="wpb_column vc_column_container vc_col-sm-2" style="min-height: 64px;"
 				><div class="wpb_wrapper">
 					<div class="wpb_text_column wpb_content_element ">
@@ -29,8 +27,7 @@
 					</div>
 				</div>
 			</div>
-			<?php } ?>
-			<?php if($currentCity != 'idiomas'){ ?>
+			
 			<div class="wpb_column vc_column_container vc_col-sm-2" style="min-height: 64px;">
 				<div class="wpb_wrapper">
 					<div class="wpb_text_column wpb_content_element ">
@@ -43,8 +40,7 @@
 					</div>
 				</div>
 			</div>
-			<?php } ?>
-			<?php if($currentCity != 'idiomas'){ ?>
+			
 			<div class="wpb_column vc_column_container vc_col-sm-2" style="min-height: 64px;">
 				<div class="wpb_wrapper">
 					<div class="wpb_text_column wpb_content_element ">
@@ -57,8 +53,7 @@
 					</div>
 				</div>
 			</div>
-			<?php } ?>
-			<?php if($currentCity != 'idiomas'){ ?>
+			
 			<div class="wpb_column vc_column_container vc_col-sm-2" style="min-height: 64px;">
 				<div class="wpb_wrapper">
 					<div class="wpb_text_column wpb_content_element ">
@@ -70,8 +65,7 @@
 					</div>
 				</div>
 			</div>
-			<?php } ?>
-			<?php if($currentCity != 'idiomas'){ ?>
+			
 			<div class="wpb_column vc_column_container vc_col-sm-2" style="min-height: 64px;">
 				<div class="wpb_wrapper">
 					<div class="wpb_text_column wpb_content_element ">
@@ -84,7 +78,7 @@
 					</div>
 				</div>
 			</div>
-			<?php } ?>
+			
 		</div>
 	</div>
 </div>

@@ -109,6 +109,7 @@ function filtrarCurso($ciudad,$filtro) {
         </ul>
         <?php } ?>
         <a data-filter="TODOS" class="ver-todos">Ver todos</a>
+        <a href="http://<?php echo "$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]" ?>formas-de-pago/" target="blank" class="formasDePagoFiltros">FORMAS DE PAGO</a>
       </div>
     </div>
     <div class="vc_col-sm-9">
